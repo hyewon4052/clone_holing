@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 17vw;
+  padding: 0 40px;
   width: 100%;
 `;
 
@@ -39,7 +39,7 @@ export const DownloadButton = styled.a`
   background: rgb(0, 171, 21);
   color: #fff;
   border-radius: 300px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.12) 0px -5px 0px 0px inset;
   display: flex;
