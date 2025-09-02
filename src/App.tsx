@@ -6,13 +6,25 @@ import {
   DownloadButton,
   LoginButton
 } from "./components/Header.styles";
+import {
+  IntroductionContainer,
+  ContentBox,
+  Title,
+  Subtitle,
+  Description,
+  CTAButton,
+  MainImg,
+  CloudBox
+} from "./components/Home.styles";
 
+import scroll from "./assets/images/main/scroll.svg";
 import logo from "./assets/images/common/favicon.svg";
 
 
 function App() {
+
   return (
-    <div style={{ width: "100vw", minHeight: "100vh", overflowY:'scroll' }}>
+    <>
       <HeaderContainer>
         <Wrapper>
           <Logo src={logo} alt="홈링 로고" />
@@ -26,7 +38,23 @@ function App() {
         </Wrapper>
       </HeaderContainer>
 
-    </div>
+      <IntroductionContainer>
+        <ContentBox>
+          <Subtitle>스스로 학습하는 수학 공부 앱</Subtitle>
+          <Title>홀링</Title>
+          <Description>
+            동영상 강의, 문제풀이, 오답학습까지<br />
+            혼자서도 알차고 탄탄하게 공부해요
+          </Description>
+          <CTAButton>무료체험 시작하기</CTAButton>
+        </ContentBox>
+        <MainImg>
+          <img src={scroll} height={"516px"} style={{ position: "relative" }} />
+          <CloudBox>
+          </CloudBox>
+        </MainImg>
+      </IntroductionContainer>
+    </>
   );
 }
 
