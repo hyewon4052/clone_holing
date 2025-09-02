@@ -41,6 +41,14 @@ import {
   StepDescription,
 } from "./components/Step.styles";
 
+import {
+  ReasonContainer,
+  ReasonContentBox,
+  ReasonBox,
+  ReasonText,
+  ReasonSpan,
+} from "./components/Reason.styles";
+
 import video1 from "./assets/videos/영상_01.mp4";
 import video2 from "./assets/videos/영상_02.mp4";
 import video3 from "./assets/videos/영상_03.mp4";
@@ -58,6 +66,8 @@ import step1Beaver from "./assets/images/steps/step1_beaver.svg";
 import step1Overlay from "./assets/images/steps/step1_overlay.svg";
 import step4Beaver from "./assets/images/steps/step4_beaver.svg";
 import step5Beaver from "./assets/images/steps/step5_beaver.svg";
+import reasonImg1 from "./assets/images/reason/reason1.svg";
+import reasonImg2 from "./assets/images/reason/reason2.svg";
 
 function App() {
   const videos = [video1, video2, video3];
@@ -281,6 +291,38 @@ function App() {
           </StepTextBox>
         </StepBox>
       </StepContainer>
+
+      <ReasonContainer>
+        <TextBox>
+          <MainText style={{ marginBottom: "20px", fontWeight: 300 }}>
+            홀링으로 공부하면
+            <br /> <span style={{ color: "#00AB15" }}>수학 실력이 오르는 </span>
+            이유
+          </MainText>
+        </TextBox>
+        <ReasonBox>
+          <ReasonContentBox>
+            <ReasonText>
+              <ReasonSpan>
+                30억 누적 데이터가 안내하는
+                <br />
+                학습 경로로 더 빠르게
+              </ReasonSpan>
+              <img src={reasonImg1} width={"100%"} />
+            </ReasonText>
+          </ReasonContentBox>
+          <ReasonContentBox>
+            <ReasonText>
+              <ReasonSpan>
+                학교 현장에서 인정받는
+                <br />
+                학습 내용으로 더 촘촘하게
+              </ReasonSpan>
+              <img src={reasonImg2} width={"100%"} />
+            </ReasonText>
+          </ReasonContentBox>
+        </ReasonBox>
+      </ReasonContainer>
     </>
   );
 }
