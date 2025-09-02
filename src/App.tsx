@@ -34,6 +34,8 @@ import {
   VideoWrapper
 } from "./components/Goal.styles";
 
+import { StepContainer } from "./components/Step.styles";
+
 import video1 from "./assets/videos/영상_01.mp4";
 import video2 from "./assets/videos/영상_02.mp4";
 import video3 from "./assets/videos/영상_03.mp4";
@@ -119,6 +121,14 @@ function App() {
           </VideoWrapper>
         </VideoBox>
       </GoalContainer>
+
+      <StepContainer>
+        <TextBox>
+          <SubText>초등 수학 공부, 아이가 잘 따라갈 수 있을까요?</SubText>
+          <MainText>홀링은 <span>스스로 끝까지</span> 해낼 수 있는<br />
+            습관과 자신감을 길러줘요</MainText>
+        </TextBox>
+      </StepContainer>
 
     </>
   );
