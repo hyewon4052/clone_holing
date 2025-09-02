@@ -19,10 +19,9 @@ export const Wrapper = styled.div`
   width: 100%;
 `;
 
-
 export const Logo = styled.img`
   height: 60px;
-  width : 60px;
+  width: 60px;
   cursor: pointer;
 `;
 
@@ -48,14 +47,13 @@ export const DownloadButton = styled.a`
   gap: 10px;
 `;
 
-
 export const LoginButton = styled.button`
   background: transparent;
   border: none;
   font-weight: 600;
   cursor: pointer;
   font-size: 16px;
-  color:black;
+  color: black;
   &:hover {
     color: #00b300;
   }
