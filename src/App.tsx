@@ -16,8 +16,14 @@ import {
   MainImg,
   CloudBox
 } from "./components/Home.styles";
+import {
+  BannerContainer,
+  BannerImg
+} from "./components/Banner.styles";
 
 import scroll from "./assets/images/main/scroll.svg";
+import bannerBrand from './assets/images/banner/banner_brand.png';
+import bannerInvite from './assets/images/banner/banner_invite.png';
 import logo from "./assets/images/common/favicon.svg";
 
 
@@ -54,6 +60,13 @@ function App() {
           </CloudBox>
         </MainImg>
       </IntroductionContainer>
+
+      <BannerContainer>
+        <BannerImg src={bannerInvite} />
+        <BannerImg src={bannerBrand} />
+      </BannerContainer>
+
+      
     </>
   );
 }
