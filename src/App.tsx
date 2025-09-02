@@ -1,4 +1,3 @@
-
 import { useRef, useState } from "react";
 import {
   HeaderContainer,
@@ -34,7 +33,20 @@ import {
   VideoWrapper
 } from "./components/Goal.styles";
 
-import { StepContainer } from "./components/Step.styles";
+import {
+  StepContainer,
+  StepBox,
+  StepImgBox,
+  StepTextBox,
+  NumberCircle,
+  TitleBox,
+  ContentSpan,
+  StepDescription
+} from "./components/Step.styles";
+
+import {
+  ReasonContainer
+} from "./components/Reason.styles";
 
 import video1 from "./assets/videos/영상_01.mp4";
 import video2 from "./assets/videos/영상_02.mp4";
@@ -43,7 +55,16 @@ import scroll from "./assets/images/main/scroll.svg";
 import bannerBrand from './assets/images/banner/banner_brand.png';
 import bannerInvite from './assets/images/banner/banner_invite.png';
 import logo from "./assets/images/common/favicon.svg";
-
+import step1 from "./assets/images/steps/step1.png";
+import step2 from "./assets/images/steps/step2.png";
+import step3 from "./assets/images/steps/step3.png";
+import step4 from "./assets/images/steps/step4.png";
+import step5 from "./assets/images/steps/step5.png";
+import ruby from "./assets/images/steps/ruby.svg";
+import step1Beaver from "./assets/images/steps/step1_beaver.svg";
+import step1Overlay from "./assets/images/steps/step1_overlay.svg";
+import step4Beaver from "./assets/images/steps/step4_beaver.svg";
+import step5Beaver from "./assets/images/steps/step5_beaver.svg";
 
 function App() {
   const videos = [video1, video2, video3];
@@ -125,11 +146,85 @@ function App() {
       <StepContainer>
         <TextBox>
           <SubText>초등 수학 공부, 아이가 잘 따라갈 수 있을까요?</SubText>
-          <MainText>홀링은 <span>스스로 끝까지</span> 해낼 수 있는<br />
+          <MainText style={{ marginBottom: 80 }}>홀링은 <span>스스로 끝까지</span> 해낼 수 있는<br />
             습관과 자신감을 길러줘요</MainText>
         </TextBox>
-      </StepContainer>
 
+        <StepBox>
+          <StepImgBox style={{ backgroundImage: `url(${step1})` }}>
+            <img src={step1Beaver} style={{ position: "absolute", left: -"55px", bottom: "-22px" }} />
+            <img src={step1Overlay} width="264" style={{ position: "absolute", right: "-19px", top: "96.08px" }} />
+          </StepImgBox>
+          <StepTextBox style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}>
+            <NumberCircle>
+              <span>1</span>
+            </NumberCircle>
+            <TitleBox>
+              <ContentSpan style={{ color: "#00AB15", fontSize: 20 }}>문제풀이를 도와주는</ContentSpan>
+              <ContentSpan style={{ color: "black", fontSize: 38 }}>동영상 강의</ContentSpan>
+            </TitleBox>
+            <StepDescription>어려운 문제가 있으면 동영상 강의를 듣고 기초 개념과 유형을 다시 학습해 보세요.</StepDescription>
+          </StepTextBox>
+        </StepBox>
+        <StepBox>
+          <StepTextBox style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}>
+            <NumberCircle>
+              <span>2</span>
+            </NumberCircle>
+            <TitleBox>
+              <ContentSpan style={{ color: "#00AB15", fontSize: 20 }}>개념과 유형을 모두 잡는</ContentSpan>
+              <ContentSpan style={{ color: "black", fontSize: 38 }}>단계별 구성</ContentSpan>
+            </TitleBox>
+            <StepDescription>기초 개념부터 마무리까지 정해진 구성을 따라 학습하면서 단원을 마스터해보세요.</StepDescription>
+          </StepTextBox>
+          <StepImgBox style={{ backgroundImage: `url(${step2})` }}>
+            <img src={ruby} style={{ position: "absolute", right: "-73px", bottom: "-30px" }} />
+          </StepImgBox>
+        </StepBox>
+        <StepBox>
+          <StepImgBox style={{ backgroundImage: `url(${step3})` }} />
+          <StepTextBox style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}>
+            <NumberCircle>
+              <span>3</span>
+            </NumberCircle>
+            <TitleBox>
+              <ContentSpan style={{ color: "#00AB15", fontSize: 20 }}>실력을 업그레이드하는</ContentSpan>
+              <ContentSpan style={{ color: "black", fontSize: 38 }}>레벨업 학습</ContentSpan>
+            </TitleBox>
+            <StepDescription>레벨을 점점 올리면서 난이도 있는 문제를 풀고, 내 실력도 함께 높여보세요.</StepDescription>
+          </StepTextBox>
+        </StepBox>
+        <StepBox>
+          <StepTextBox style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}>
+            <NumberCircle>
+              <span>4</span>
+            </NumberCircle>
+            <TitleBox>
+              <ContentSpan style={{ color: "#00AB15", fontSize: 20 }}>취약 유형을 클리어하는</ContentSpan>
+              <ContentSpan style={{ color: "black", fontSize: 38 }}>챌린지 학습</ContentSpan>
+            </TitleBox>
+            <StepDescription>AI 학습 분석으로 현재 실력을 진단하고, 부족한 유형을 보완해 보세요.</StepDescription>
+          </StepTextBox>
+          <StepImgBox style={{ backgroundImage: `url(${step4})` }}>
+            <img src={step4Beaver} style={{ position: "absolute", right: "-73px", bottom: "-30px" }} />
+          </StepImgBox>
+        </StepBox>
+        <StepBox>
+          <StepImgBox style={{ backgroundImage: `url(${step5})` }}>
+            <img src={step5Beaver} style={{ position: "absolute", right: "-73px", bottom: "-30px" }} />
+          </StepImgBox>
+          <StepTextBox style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}>
+            <NumberCircle>
+              <span>5</span>
+            </NumberCircle>
+            <TitleBox>
+              <ContentSpan style={{ color: "#00AB15", fontSize: 20 }}>의욕과 재미를 더하는</ContentSpan>
+              <ContentSpan style={{ color: "black", fontSize: 38 }}>학습 보상</ContentSpan>
+            </TitleBox>
+            <StepDescription>학습 목표를 달성해 루비를 모으고 게임도 참여하면서 즐겁게 공부해 보세요.</StepDescription>
+          </StepTextBox>
+        </StepBox>
+      </StepContainer>
     </>
   );
 }
