@@ -14,6 +14,21 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Suit-extrabold";
+  src: url("/assets/fonts/suit/SUIT-ExtraBold.woff2");
+}
+
+@font-face {
+  font-family: "Suit-regular";
+  src: url("/assets/fonts/suit/SUIT-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Suit-semibold";
+  src: url("/assets/fonts/suit/SUIT-SemiBold.woff2");
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
