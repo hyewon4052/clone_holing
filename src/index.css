@@ -61,3 +61,7 @@ video {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+
+* {
+  box-sizing: border-box;
+}
