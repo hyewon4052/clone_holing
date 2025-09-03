@@ -12,7 +12,9 @@ function Header() {
     <HeaderContainer>
       <Wrapper>
         <Logo
-          src={import.meta.env.BASE_URL + "assets/images/common/favicon.svg"}
+          src={
+            import.meta.env.BASE_URL + "assets/images/root/common/favicon.svg"
+          }
           alt="홈링 로고"
         />
         <NavActions>

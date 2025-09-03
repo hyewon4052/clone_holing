@@ -27,7 +27,8 @@ function Section4() {
             </ReasonSpan>
             <img
               src={
-                import.meta.env.BASE_URL + "assets/images/reason/reason1.svg"
+                import.meta.env.BASE_URL +
+                "assets/images/root/reason/reason1.svg"
               }
               width="100%"
             />
@@ -42,7 +43,8 @@ function Section4() {
             </ReasonSpan>
             <img
               src={
-                import.meta.env.BASE_URL + "assets/images/reason/reason2.svg"
+                import.meta.env.BASE_URL +
+                "assets/images/root/reason/reason2.svg"
               }
               width="100%"
             />

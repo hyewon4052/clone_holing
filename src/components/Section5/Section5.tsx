@@ -27,13 +27,15 @@ function Section5() {
             <ParentsImgWrapper>
               <img
                 src={
-                  import.meta.env.BASE_URL + "assets/images/parents/card1.png"
+                  import.meta.env.BASE_URL +
+                  "assets/images/root/parents/card1.png"
                 }
                 width="100%"
               />
               <img
                 src={
-                  import.meta.env.BASE_URL + "assets/images/parents/quote.svg"
+                  import.meta.env.BASE_URL +
+                  "assets/images/root/parents/quote.svg"
                 }
                 width="50"
                 style={{ position: "relative", top: "-12px" }}
@@ -65,13 +67,15 @@ function Section5() {
             <ParentsImgWrapper>
               <img
                 src={
-                  import.meta.env.BASE_URL + "assets/images/parents/card2.png"
+                  import.meta.env.BASE_URL +
+                  "assets/images/root/parents/card2.png"
                 }
                 width="100%"
               />
               <img
                 src={
-                  import.meta.env.BASE_URL + "assets/images/parents/quote.svg"
+                  import.meta.env.BASE_URL +
+                  "assets/images/root/parents/quote.svg"
                 }
                 width="50"
                 style={{ position: "relative", top: "-12px" }}
@@ -103,13 +107,15 @@ function Section5() {
             <ParentsImgWrapper>
               <img
                 src={
-                  import.meta.env.BASE_URL + "assets/images/parents/card3.png"
+                  import.meta.env.BASE_URL +
+                  "assets/images/root/parents/card3.png"
                 }
                 width="100%"
               />
               <img
                 src={
-                  import.meta.env.BASE_URL + "assets/images/parents/quote.svg"
+                  import.meta.env.BASE_URL +
+                  "assets/images/root/parents/quote.svg"
                 }
                 width="50"
                 style={{ position: "relative", top: "-12px" }}

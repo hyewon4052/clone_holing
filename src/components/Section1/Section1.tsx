@@ -14,7 +14,7 @@ function Section1() {
     <IntroductionContainer
       style={{
         backgroundImage: `url(${
-          import.meta.env.BASE_URL + "assets/images/main/bg.png"
+          import.meta.env.BASE_URL + "assets/images/root/main/bg.png"
         })`,
       }}
     >
@@ -30,14 +30,14 @@ function Section1() {
       </ContentBox>
       <MainImg>
         <img
-          src={import.meta.env.BASE_URL + "assets/images/main/scroll.svg"}
+          src={import.meta.env.BASE_URL + "assets/images/root/main/scroll.svg"}
           height={"516px"}
           style={{ position: "relative" }}
         />
         <CloudBox
           style={{
             backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/main/CloudBox.svg"
+              import.meta.env.BASE_URL + "assets/images/root/main/CloudBox.svg"
             })`,
           }}
         ></CloudBox>

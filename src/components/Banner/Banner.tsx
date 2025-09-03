@@ -5,11 +5,15 @@ function Banner() {
     <BannerContainer>
       <BannerImg
         src={
-          import.meta.env.BASE_URL + "assets/images/banner/banner_invite.png"
+          import.meta.env.BASE_URL +
+          "assets/images/root/banner/banner_invite.png"
         }
       />
       <BannerImg
-        src={import.meta.env.BASE_URL + "assets/images/banner/banner_brand.png"}
+        src={
+          import.meta.env.BASE_URL +
+          "assets/images/root/banner/banner_brand.png"
+        }
       />
     </BannerContainer>
   );

@@ -25,19 +25,21 @@ function Section3() {
         <StepImgBox
           style={{
             backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/steps/step1.png"
+              import.meta.env.BASE_URL + "assets/images/root/steps/step1.png"
             })`,
           }}
         >
           <img
             src={
-              import.meta.env.BASE_URL + "assets/images/steps/step1_beaver.svg"
+              import.meta.env.BASE_URL +
+              "assets/images/root/steps/step1_beaver.svg"
             }
             style={{ position: "absolute", left: -"55px", bottom: "-22px" }}
           />
           <img
             src={
-              import.meta.env.BASE_URL + "assets/images/steps/step1_overlay.svg"
+              import.meta.env.BASE_URL +
+              "assets/images/root/steps/step1_overlay.svg"
             }
             width="264"
             style={{ position: "absolute", right: "-19px", top: "96.08px" }}
@@ -86,12 +88,12 @@ function Section3() {
         <StepImgBox
           style={{
             backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/steps/step2.png"
+              import.meta.env.BASE_URL + "assets/images/root/steps/step2.png"
             })`,
           }}
         >
           <img
-            src={import.meta.env.BASE_URL + "assets/images/steps/ruby.svg"}
+            src={import.meta.env.BASE_URL + "assets/images/root/steps/ruby.svg"}
             style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
           />
         </StepImgBox>
@@ -100,7 +102,7 @@ function Section3() {
         <StepImgBox
           style={{
             backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/steps/step3.png"
+              import.meta.env.BASE_URL + "assets/images/root/steps/step3.png"
             })`,
           }}
         ></StepImgBox>
@@ -146,13 +148,14 @@ function Section3() {
         <StepImgBox
           style={{
             backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/steps/step4.png"
+              import.meta.env.BASE_URL + "assets/images/root/steps/step4.png"
             })`,
           }}
         >
           <img
             src={
-              import.meta.env.BASE_URL + "assets/images/steps/step4_beaver.svg"
+              import.meta.env.BASE_URL +
+              "assets/images/root/steps/step4_beaver.svg"
             }
             style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
           />
@@ -163,13 +166,14 @@ function Section3() {
         <StepImgBox
           style={{
             backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/steps/step5.png"
+              import.meta.env.BASE_URL + "assets/images/root/steps/step5.png"
             })`,
           }}
         >
           <img
             src={
-              import.meta.env.BASE_URL + "assets/images/steps/step5_beaver.svg"
+              import.meta.env.BASE_URL +
+              "assets/images/root/steps/step5_beaver.svg"
             }
             style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
           />
