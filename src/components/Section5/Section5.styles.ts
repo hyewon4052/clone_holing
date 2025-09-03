@@ -21,10 +21,9 @@ export const ParentsCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  -webkit-box-align: center;
   align-items: center;
   padding: 30px 40px;
-  width: 376px;
+  width: 290px;
   border-radius: 30px;
   background: rgb(255, 255, 255);
   box-shadow: rgba(85, 86, 86, 0.12) 4px 4px 20px 0px;
@@ -37,7 +36,17 @@ export const ParentsTextWrapper = styled.div`
   align-items: center;
 `;
 
-export const ParentsDescription = styled.div``;
+export const ParentsDescription = styled.div`
+  font-family: "Suit-legular";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  width: unset;
+  white-space: normal;
+  line-height: 1.5;
+  height: 116px;
+  color: black;
+`;
 
 export const ParentsContentBox = styled.div`
   display: flex;
@@ -66,11 +75,30 @@ export const ParentsAuthor = styled.div`
 `;
 
 export const ParentsName = styled.span`
+  font-family: "Suit-regular";
   font-size: 16px;
   font-weight: 500;
-  color: inherit;
-  text-align: center;
-  width: unset;
   white-space: normal;
-  line-height: inherit;
+`;
+
+export const VerticalLine = styled.div`
+  flex-shrink: 0;
+  width: 1px;
+  height: 14px;
+  background-color: rgb(217, 221, 224);
+`;
+
+export const ParentsInfo = styled.span`
+  font-family: "Suit-regular";
+  font-size: 16px;
+  font-weight: 500;
+  white-space: normal;
+`;
+
+export const ParentsBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
 `;
