@@ -1,22 +1,25 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.nav`
-  position: fixed;
   display: flex;
-  z-index: 10;
+  background: white;
+  z-index: 100;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgb(230, 231, 234);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
 `;
 
 export const Wrapper = styled.div`
-  flex-direction: row;
-  height: 80px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
   width: 100%;
+  max-width: 1280px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 0px 40px;
 `;
 
 export const Logo = styled.img`

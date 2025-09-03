@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ReasonContainer = styled.div`
-  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 80px;
