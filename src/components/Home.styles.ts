@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import cloud from "../assets/images/main/cloud.svg";
-import background from "../assets/images/main/bg.png";
 import "../index.css";
 
 export const IntroductionContainer = styled.div`
-  background-image: url(${background});
   height: 700px;
   background-repeat: no-repeat;
   background-position: center top;
@@ -14,7 +11,6 @@ export const IntroductionContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 170px;
-  display: flex;
   width: 100%;
 `;
 
@@ -69,18 +65,16 @@ export const MainImg = styled.div`
 `;
 
 export const CloudBox = styled.div`
-  background-image: url(${cloud});
   position: absolute;
   z-index: 10;
   display: flex;
   flex-direction: row;
   gap: 8px;
-  -webkit-box-align: center;
   align-items: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   width: 436px;
   height: 114px;
-  padding: 35px 28px 35px 49px;
+  padding: 35px 28px 35px 49px; ;
 `;

@@ -49,28 +49,12 @@ import {
   ReasonSpan,
 } from "./components/Reason.styles";
 
-import video1 from "./assets/videos/영상_01.mp4";
-import video2 from "./assets/videos/영상_02.mp4";
-import video3 from "./assets/videos/영상_03.mp4";
-import scroll from "./assets/images/main/scroll.svg";
-import bannerBrand from "./assets/images/banner/banner_brand.png";
-import bannerInvite from "./assets/images/banner/banner_invite.png";
-import logo from "./assets/images/common/favicon.svg";
-import step1 from "./assets/images/steps/step1.png";
-import step2 from "./assets/images/steps/step2.png";
-import step3 from "./assets/images/steps/step3.png";
-import step4 from "./assets/images/steps/step4.png";
-import step5 from "./assets/images/steps/step5.png";
-import ruby from "./assets/images/steps/ruby.svg";
-import step1Beaver from "./assets/images/steps/step1_beaver.svg";
-import step1Overlay from "./assets/images/steps/step1_overlay.svg";
-import step4Beaver from "./assets/images/steps/step4_beaver.svg";
-import step5Beaver from "./assets/images/steps/step5_beaver.svg";
-import reasonImg1 from "./assets/images/reason/reason1.svg";
-import reasonImg2 from "./assets/images/reason/reason2.svg";
-
 function App() {
-  const videos = [video1, video2, video3];
+  const videos = [
+    "assets/videos/videos_01.mp4",
+    "assets/videos/videos_02.mp4",
+    "assets/videos/videos_03.mp4",
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -86,7 +70,10 @@ function App() {
     <>
       <HeaderContainer>
         <Wrapper>
-          <Logo src={logo} alt="홈링 로고" />
+          <Logo
+            src={import.meta.env.BASE_URL + "assets/images/common/favicon.svg"}
+            alt="홈링 로고"
+          />
           <NavActions>
             <DownloadButton href="https://apps.apple.com/kr/app/%ED%99%80%EB%A7%81-%EC%88%98%ED%95%99%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%95%B1/id6478107698">
               앱 다운로드
@@ -96,7 +83,13 @@ function App() {
         </Wrapper>
       </HeaderContainer>
 
-      <IntroductionContainer>
+      <IntroductionContainer
+        style={{
+          backgroundImage: `url(${
+            import.meta.env.BASE_URL + "assets/images/main/bg.png"
+          })`,
+        }}
+      >
         <ContentBox>
           <Subtitle>스스로 학습하는 수학 공부 앱</Subtitle>
           <Title>홀링</Title>
@@ -108,14 +101,32 @@ function App() {
           <CTAButton>무료체험 시작하기</CTAButton>
         </ContentBox>
         <MainImg>
-          <img src={scroll} height={"516px"} style={{ position: "relative" }} />
-          <CloudBox></CloudBox>
+          <img
+            src={import.meta.env.BASE_URL + "assets/images/main/scroll.svg"}
+            height={"516px"}
+            style={{ position: "relative" }}
+          />
+          <CloudBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/main/CloudBox.svg"
+              })`,
+            }}
+          ></CloudBox>
         </MainImg>
       </IntroductionContainer>
 
       <BannerContainer>
-        <BannerImg src={bannerInvite} />
-        <BannerImg src={bannerBrand} />
+        <BannerImg
+          src={
+            import.meta.env.BASE_URL + "assets/images/banner/banner_invite.png"
+          }
+        />
+        <BannerImg
+          src={
+            import.meta.env.BASE_URL + "assets/images/banner/banner_brand.png"
+          }
+        />
       </BannerContainer>
 
       <GoalContainer>
@@ -154,15 +165,26 @@ function App() {
             습관과 자신감을 길러줘요
           </MainText>
         </TextBox>
-
         <StepBox>
-          <StepImgBox style={{ backgroundImage: `url(${step1})` }}>
+          <StepImgBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/steps/step1.png"
+              })`,
+            }}
+          >
             <img
-              src={step1Beaver}
+              src={
+                import.meta.env.BASE_URL +
+                "assets/images/steps/step1_beaver.svg"
+              }
               style={{ position: "absolute", left: -"55px", bottom: "-22px" }}
             />
             <img
-              src={step1Overlay}
+              src={
+                import.meta.env.BASE_URL +
+                "assets/images/steps/step1_overlay.svg"
+              }
               width="264"
               style={{ position: "absolute", right: "-19px", top: "96.08px" }}
             />
@@ -207,15 +229,27 @@ function App() {
               마스터해보세요.
             </StepDescription>
           </StepTextBox>
-          <StepImgBox style={{ backgroundImage: `url(${step2})` }}>
+          <StepImgBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/steps/step2.png"
+              })`,
+            }}
+          >
             <img
-              src={ruby}
+              src={import.meta.env.BASE_URL + "assets/images/steps/ruby.svg"}
               style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
             />
           </StepImgBox>
         </StepBox>
         <StepBox>
-          <StepImgBox style={{ backgroundImage: `url(${step3})` }} />
+          <StepImgBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/steps/step3.png"
+              })`,
+            }}
+          ></StepImgBox>
           <StepTextBox
             style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}
           >
@@ -256,17 +290,36 @@ function App() {
               보세요.
             </StepDescription>
           </StepTextBox>
-          <StepImgBox style={{ backgroundImage: `url(${step4})` }}>
+          <StepImgBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/steps/step4.png"
+              })`,
+            }}
+          >
             <img
-              src={step4Beaver}
+              src={
+                import.meta.env.BASE_URL +
+                "assets/images/steps/step4_beaver.svg"
+              }
               style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
             />
           </StepImgBox>
         </StepBox>
+
         <StepBox>
-          <StepImgBox style={{ backgroundImage: `url(${step5})` }}>
+          <StepImgBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/steps/step5.png"
+              })`,
+            }}
+          >
             <img
-              src={step5Beaver}
+              src={
+                import.meta.env.BASE_URL +
+                "assets/images/steps/step5_beaver.svg"
+              }
               style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
             />
           </StepImgBox>
@@ -308,7 +361,12 @@ function App() {
                 <br />
                 학습 경로로 더 빠르게
               </ReasonSpan>
-              <img src={reasonImg1} width={"100%"} />
+              <img
+                src={
+                  import.meta.env.BASE_URL + "assets/images/reason/reason1.svg"
+                }
+                width="100%"
+              />
             </ReasonText>
           </ReasonContentBox>
           <ReasonContentBox>
@@ -318,7 +376,12 @@ function App() {
                 <br />
                 학습 내용으로 더 촘촘하게
               </ReasonSpan>
-              <img src={reasonImg2} width={"100%"} />
+              <img
+                src={
+                  import.meta.env.BASE_URL + "assets/images/reason/reason2.svg"
+                }
+                width="100%"
+              />
             </ReasonText>
           </ReasonContentBox>
         </ReasonBox>
