@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "../index.css";
+import "../../index.css";
 
 export const IntroductionContainer = styled.div`
   height: 700px;
@@ -76,5 +76,5 @@ export const CloudBox = styled.div`
   background-position: center center;
   width: 436px;
   height: 114px;
-  padding: 35px 28px 35px 49px; ;
+  padding: 35px 28px 35px 49px;
 `;

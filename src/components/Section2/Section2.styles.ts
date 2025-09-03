@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../../index.css";
 
 export const GoalContainer = styled.div`
   position: absolute;
