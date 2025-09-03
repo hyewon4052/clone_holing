@@ -1,0 +1,258 @@
+import styled from "styled-components";
+import "../../index.css";
+
+export const BannerContainer = styled.div`
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 120px 0px 0px 0px;
+  width: 100%;
+  max-width: 1280px;
+`;
+
+export const BannerImg = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 119px;
+  background-image: url(/assets/images/root/banner/bg.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+`;
+
+export const BannerColor = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  inset: 0px;
+  background: rgba(255, 135, 0, 0.7);
+  border-radius: 20px;
+`;
+
+export const BannerContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 135, 0, 0) 0%,
+    rgba(255, 135, 0, 0.49) 19.5%,
+    rgba(255, 135, 0, 0.9) 53.5%,
+    rgba(255, 135, 0, 0.45) 80.5%,
+    rgba(255, 135, 0, 0) 100%
+  );
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+`;
+
+export const BannerText = styled.span`
+  font-family: SUIT;
+  font-size: 34px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: unset;
+  white-space: normal;
+  line-height: inherit;
+  letter-spacing: -1px;
+  span {
+    font-family: inherit;
+    font-size: 34px;
+    font-weight: 500;
+    color: rgb(255, 246, 36);
+    text-align: inherit;
+    width: unset;
+    white-space: normal;
+    line-height: inherit;
+  }
+`;
+
+export const ServiceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgb(223, 245, 254);
+`;
+
+export const ServiceContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  width: 100%;
+  background: white;
+  padding: 100px 0px;
+`;
+
+export const Title = styled.span`
+  width: unset;
+  white-space: normal;
+  color: rgb(37, 37, 37);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+`;
+
+export const ServiceList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+`;
+
+export const ServiceItem = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const ServiceImg = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  width: 50%;
+`;
+
+export const ServiceDetail = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ServiceTitleBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`;
+
+export const ServiceTitle = styled.span`
+  color: rgb(18, 22, 25);
+  font-family: Pretendard;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.38px;
+  margin-bottom: 10px;
+`;
+
+export const ServiceSubTitle = styled.span`
+  color: rgb(18, 22, 25);
+  font-family: SUIT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 24px;
+`;
+
+export const ServiceDescription = styled.span`
+  color: rgb(117, 126, 133);
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: -0.027px;
+  white-space: break-spaces;
+  margin-bottom: 24px;
+`;
+
+export const FlexRow20 = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+`;
+
+export const ThickBtnBox = styled.a`
+  display: flex;
+  padding: 10px 40px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-radius: 50px;
+  background: rgb(38, 161, 250);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: SUIT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136%;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s ease-in-out;
+`;
+
+export const BtnContent = styled.span`
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: inherit;
+  text-align: center;
+  width: unset;
+  white-space: normal;
+  line-height: inherit;
+  flex-shrink: 0;
+`;
+
+export const BtnTitle = styled.span`
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  color: inherit;
+  text-align: inherit;
+  width: unset;
+  white-space: normal;
+  line-height: inherit;
+`;
+
+export const BtnText = styled.span`
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: inherit;
+  text-align: inherit;
+  width: unset;
+  white-space: normal;
+  line-height: inherit;
+`;
+
+export const ThinBtnBox = styled.a`
+  display: flex;
+  padding: 10px 40px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-radius: 50px;
+  background: rgb(38, 161, 250);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: SUIT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136%;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s ease-in-out;
+`;

@@ -1,15 +1,32 @@
 @font-face {
-    font-family: 'Maplestory';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
-    font-weight: 300;
-    font-display: swap;
+  font-family: "Maplestory";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Maplestory';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
+  font-family: "Maplestory";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suit-extrabold";
+  src: url("/assets/fonts/suit/SUIT-ExtraBold.woff2");
+}
+
+@font-face {
+  font-family: "Suit-regular";
+  src: url("/assets/fonts/suit/SUIT-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Suit-semibold";
+  src: url("/assets/fonts/suit/SUIT-SemiBold.woff2");
 }
 
 :root {
@@ -25,14 +42,26 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --point_01: #00ab15;
+  --gray_500: #bfc5cb;
+  --gray_600: #98a1a6;
+  --gray_700: #757e85;
+  --gray_850: #4a4e53;
 }
 
 body {
   margin: 0;
+  background-color: #fafafa;
+  font-family: "Maplestory";
 }
 
-video { 
+video {
   object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+* {
+  box-sizing: border-box;
 }
