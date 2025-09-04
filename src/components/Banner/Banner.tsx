@@ -1,15 +1,15 @@
-import { BannerContainer, BannerImg } from "./Banner.styles";
+import * as S from "./Banner.styles";
 
 function Banner() {
   return (
-    <BannerContainer>
-      <BannerImg>
+    <S.BannerContainer>
+      <S.BannerImg>
         <img src="/assets/images/root/banner/banner_invite.png" />
-      </BannerImg>
-      <BannerImg>
+      </S.BannerImg>
+      <S.BannerImg>
         <img src="/assets/images/root/banner/banner_brand.png" />
-      </BannerImg>
-    </BannerContainer>
+      </S.BannerImg>
+    </S.BannerContainer>
   );
 }
 

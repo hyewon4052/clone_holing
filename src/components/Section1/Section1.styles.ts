@@ -37,19 +37,18 @@ export const Title = styled.h1`
   font-size: 90px;
   font-weight: 400;
   color: black;
-  text-align: inherit;
   width: unset;
   white-space: normal;
-  line-height: inherit;
+  line-height: 1.5;
   -webkit-text-stroke: 2px black;
+  margin: 0;
 `;
 
 export const Description = styled.span`
   font-family: "Suit-regular";
   font-size: 24px;
-  font-weight: 500;
   color: rgb(117, 126, 133);
-  text-align: center;
+  text-align: left;
   width: unset;
   white-space: normal;
   line-height: 1.6;

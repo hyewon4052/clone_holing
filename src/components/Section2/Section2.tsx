@@ -1,12 +1,5 @@
 import { useRef, useState } from "react";
-import {
-  GoalContainer,
-  TextBox,
-  SubText,
-  MainText,
-  VideoBox,
-  VideoWrapper,
-} from "./Section2.styles";
+import * as S from "./Section2.styles";
 
 function Section2() {
   const videos = [
@@ -27,20 +20,21 @@ function Section2() {
   };
 
   return (
-    <GoalContainer>
-      <TextBox>
-        <SubText>초등부터 중·고등까지</SubText>
-        <MainText style={{ marginBottom: "80px" }}>
+    <S.GoalContainer>
+      <S.TextBox>
+        <S.SubText>초등부터 중·고등까지</S.SubText>
+        <S.MainText style={{ marginBottom: "80px" }}>
           <span>하루 30분</span>
           이면 한 학기 수학을 완성할 수 있어요
-        </MainText>
-      </TextBox>
-      <VideoBox>
-        <VideoWrapper>
+        </S.MainText>
+      </S.TextBox>
+      <S.VideoBox>
+        <S.VideoWrapper>
           <video
             ref={videoRef}
             key={currentIndex}
             autoPlay
+            controls
             onEnded={handleEnded}
             style={{
               width: "100%",
@@ -50,9 +44,9 @@ function Section2() {
           >
             <source src={videos[currentIndex]} type="video/mp4" />
           </video>
-        </VideoWrapper>
-      </VideoBox>
-    </GoalContainer>
+        </S.VideoWrapper>
+      </S.VideoBox>
+    </S.GoalContainer>
   );
 }
 

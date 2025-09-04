@@ -1,14 +1,5 @@
 import { useState } from "react";
-import {
-  QnAContainer,
-  QuestionCard,
-  QuestionCardHeader,
-  QuestionCardList,
-  QuestionLabel,
-  Title,
-  QuestionTitle,
-  QuestionAnswer,
-} from "./Section7.styles";
+import * as S from "./Section7.styles";
 
 function Section7() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -41,15 +32,15 @@ function Section7() {
   };
 
   return (
-    <QnAContainer>
-      <Title>자주 묻는 질문</Title>
-      <QuestionCardList>
+    <S.QnAContainer>
+      <S.Title>자주 묻는 질문</S.Title>
+      <S.QuestionCardList>
         {qna.map((q, index) => {
           const isOpen = openIndex === index;
           return (
-            <QuestionCard key={index} onClick={() => toggleQuestion(index)}>
-              <QuestionCardHeader>
-                <QuestionLabel>
+            <S.QuestionCard key={index} onClick={() => toggleQuestion(index)}>
+              <S.QuestionCardHeader>
+                <S.QuestionLabel>
                   <img
                     width={44}
                     src={
@@ -58,10 +49,10 @@ function Section7() {
                         : "/assets/images/root/qna/question_collapsed.svg"
                     }
                   />
-                  <QuestionTitle color={isOpen ? "#00ab15" : "black"}>
+                  <S.QuestionTitle color={isOpen ? "#00ab15" : "black"}>
                     {q.question}
-                  </QuestionTitle>
-                </QuestionLabel>
+                  </S.QuestionTitle>
+                </S.QuestionLabel>
                 <img
                   src={
                     isOpen
@@ -69,13 +60,13 @@ function Section7() {
                       : "/assets/images/root/qna/open.svg"
                   }
                 />
-              </QuestionCardHeader>
-              {isOpen && <QuestionAnswer>{q.answer}</QuestionAnswer>}
-            </QuestionCard>
+              </S.QuestionCardHeader>
+              {isOpen && <S.QuestionAnswer>{q.answer}</S.QuestionAnswer>}
+            </S.QuestionCard>
           );
         })}
-      </QuestionCardList>
-    </QnAContainer>
+      </S.QuestionCardList>
+    </S.QnAContainer>
   );
 }
 
