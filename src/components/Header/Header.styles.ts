@@ -2,6 +2,7 @@ import styled from "styled-components";
 import "../../index.css";
 
 export const HeaderContainer = styled.nav`
+  margin: 0;
   display: flex;
   background: white;
   z-index: 100;
