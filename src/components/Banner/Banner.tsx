@@ -2,7 +2,7 @@ import * as S from "./Banner.styles";
 
 function Banner() {
   return (
-    <S.BannerContainer>
+    <S.BannerContainer style={{ width: "100%" }}>
       <S.BannerImg>
         <img src="/assets/images/root/banner/banner_invite.png" />
       </S.BannerImg>
