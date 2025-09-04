@@ -13,6 +13,9 @@ export const Background = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   background-color: rgba(132, 223, 255, 0.32);
+  @media (max-width: 800px) {
+    padding: 40px 40px 52px;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -31,6 +34,9 @@ export const SubTitle = styled.span`
   width: unset;
   white-space: normal;
   line-height: 1.4;
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
 `;
 
 export const Title = styled.span`
@@ -41,6 +47,9 @@ export const Title = styled.span`
   width: unset;
   white-space: normal;
   line-height: 1.4;
+  @media (max-width: 800px) {
+    font-size: 24px;
+  }
 `;
 
 export const LoginBtn = styled.div`
@@ -57,4 +66,8 @@ export const LoginBtn = styled.div`
   background: var(--p_green_500_btON, #00ab15);
   box-shadow: rgba(0, 0, 0, 0.12) 0px -10px 0px 0px inset;
   transition: transform 0.1s ease-in-out;
+  @media (max-width: 800px) {
+    font-size: 22px;
+    padding: 19px 59px 25px;
+  }
 `;
