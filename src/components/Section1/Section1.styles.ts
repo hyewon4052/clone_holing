@@ -14,11 +14,22 @@ export const IntroductionContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto;
+
+  @media (max-width: 800px) {
+    background-color: rgb(208, 241, 253);
+    background-image: none;
+    flex-direction: column;
+    padding: 80px 0px;
+    gap: 50px;
+  }
 `;
 
 export const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 800px) {
+    align-items: center;
+  }
 `;
 
 export const Subtitle = styled.span`
@@ -42,6 +53,10 @@ export const Title = styled.h1`
   line-height: 1.5;
   -webkit-text-stroke: 2px black;
   margin: 0;
+  @media (max-width: 800px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Description = styled.span`
