@@ -10,6 +10,9 @@ export const BannerContainer = styled.div`
   padding: 120px 0px 0px 0px;
   width: 100%;
   max-width: 1280px;
+  @media (max-width: 800px) {
+    padding: 80px 20px;
+  }
 `;
 
 export const BannerImg = styled.div`
@@ -22,6 +25,9 @@ export const BannerImg = styled.div`
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center 0px;
+  @media (max-width: 800px) {
+    height: 180px;
+  }
 `;
 
 export const BannerColor = styled.div`
@@ -51,6 +57,9 @@ export const BannerContent = styled.div`
   );
   backdrop-filter: blur(1px);
   border-radius: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const BannerText = styled.span`
@@ -72,6 +81,12 @@ export const BannerText = styled.span`
     width: unset;
     white-space: normal;
     line-height: inherit;
+    @media (max-width: 800px) {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 800px) {
+    font-size: 24px;
   }
 `;
 
@@ -102,6 +117,10 @@ export const Title = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media (max-width: 800px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 `;
 
 export const ServiceList = styled.div`
@@ -114,20 +133,33 @@ export const ServiceList = styled.div`
 export const ServiceItem = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const ServiceImg = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  -webkit-box-pack: end;
   justify-content: flex-end;
   width: 50%;
+  @media (max-width: 800px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 export const ServiceDetail = styled.div`
   display: flex;
   flex-direction: column;
+  padding-top: 32px;
+  padding-left: 64px;
+  @media (max-width: 800px) {
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ServiceTitleBox = styled.div`

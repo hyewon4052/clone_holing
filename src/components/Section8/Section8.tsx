@@ -29,16 +29,14 @@ function Section8() {
           </S.Title>
           <S.ServiceList style={{ width: "100%" }}>
             <S.ServiceItem>
-              <S.ServiceImg style={{ width: "50%" }}>
+              <S.ServiceImg>
                 <img
                   width={525}
                   src="/assets/images/root/services/service_01.png"
                   style={{ maxWidth: "100%" }}
                 />
               </S.ServiceImg>
-              <S.ServiceDetail
-                style={{ paddingTop: "32px", paddingLeft: "64px" }}
-              >
+              <S.ServiceDetail>
                 <S.ServiceTitleBox>
                   <S.ServiceTitle>매쓰홀릭</S.ServiceTitle>
                   <img
@@ -94,16 +92,14 @@ function Section8() {
             </S.ServiceItem>
 
             <S.ServiceItem>
-              <S.ServiceImg style={{ width: "50%" }}>
+              <S.ServiceImg>
                 <img
                   width={525}
                   src="/assets/images/root/services/service_02.png"
                   style={{ maxWidth: "100%" }}
                 />
               </S.ServiceImg>
-              <S.ServiceDetail
-                style={{ paddingTop: "32px", paddingLeft: "64px" }}
-              >
+              <S.ServiceDetail>
                 <S.ServiceTitleBox>
                   <S.ServiceTitle>연산대장</S.ServiceTitle>
                 </S.ServiceTitleBox>
@@ -140,16 +136,14 @@ function Section8() {
             </S.ServiceItem>
 
             <S.ServiceItem>
-              <S.ServiceImg style={{ width: "50%" }}>
+              <S.ServiceImg>
                 <img
                   width={525}
                   src="/assets/images/root/services/service_03.png"
                   style={{ maxWidth: "100%" }}
                 />
               </S.ServiceImg>
-              <S.ServiceDetail
-                style={{ paddingTop: "32px", paddingLeft: "64px" }}
-              >
+              <S.ServiceDetail>
                 <S.ServiceTitleBox>
                   <S.ServiceTitle>시험대장</S.ServiceTitle>
                 </S.ServiceTitleBox>
