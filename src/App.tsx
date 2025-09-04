@@ -39,7 +39,6 @@ export const Body = styled.div`
   align-items: center;
   margin-top: 80px;
   width: 100%;
-  height: 100%;
 `;
 
 export const Main = styled.div`

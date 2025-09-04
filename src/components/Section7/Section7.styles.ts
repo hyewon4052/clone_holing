@@ -3,6 +3,7 @@ import "../../index.css";
 import { SubText } from "../Section2/Section2.styles";
 
 export const QnAContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 80px;

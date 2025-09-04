@@ -3,7 +3,6 @@ import "../../index.css";
 
 export const StepContainer = styled.div`
   overflow: hidden;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
