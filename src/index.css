@@ -43,11 +43,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --point_01: #00ab15;
+  --gray_200: #f6f7f9;
+  --gray_300: #e6e7ea;
+  --gray_400: #d9dde0;
   --gray_500: #bfc5cb;
   --gray_600: #98a1a6;
   --gray_700: #757e85;
   --gray_850: #4a4e53;
+  --gray_900: #121619;
+  --point_01: #00ab15;
 }
 
 body {
@@ -64,4 +68,12 @@ video {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+nav {
+  unicode-bidi: isolate;
 }
