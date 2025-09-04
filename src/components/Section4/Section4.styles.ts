@@ -15,6 +15,11 @@ export const ReasonBox = styled.div`
   flex-direction: row;
   gap: 60px;
   justify-content: center;
+  @media (max-width: 800px) {
+    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ReasonContentBox = styled.div`
@@ -30,6 +35,9 @@ export const ReasonText = styled.div`
   flex-direction: column;
   gap: 60px;
   align-items: center;
+  img {
+    width: 100%;
+  }
 `;
 
 export const ReasonSpan = styled.span`

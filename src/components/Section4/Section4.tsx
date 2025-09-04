@@ -24,7 +24,6 @@ function Section4() {
                 import.meta.env.BASE_URL +
                 "assets/images/root/reason/reason1.svg"
               }
-              width="100%"
             />
           </S.ReasonText>
         </S.ReasonContentBox>
@@ -40,7 +39,6 @@ function Section4() {
                 import.meta.env.BASE_URL +
                 "assets/images/root/reason/reason2.svg"
               }
-              width="100%"
             />
           </S.ReasonText>
         </S.ReasonContentBox>
