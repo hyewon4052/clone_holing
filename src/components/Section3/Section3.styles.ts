@@ -18,6 +18,11 @@ export const StepBox1 = styled.div`
   gap: 36px;
   align-items: start;
   justify-content: flex-start;
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const StepBox2 = styled.div`
@@ -26,6 +31,11 @@ export const StepBox2 = styled.div`
   gap: 36px;
   align-items: flex-start;
   justify-content: flex-start;
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const StepImgBox = styled.div`
@@ -40,11 +50,26 @@ export const StepImgBox = styled.div`
     rgba(116, 123, 126, 0.12) 5px 5px 10px 0px;
   flex-shrink: 0;
   margin: 0px 82px 30px;
+  @media (max-width: 800px) {
+    width: 273.285px;
+    height: 209px;
+    border-radius: 15px;
+    box-shadow: rgba(142, 147, 148, 0.08) 9.94275px 9.94275px 11.1856px 0px,
+      rgba(116, 123, 126, 0.12) 3.10711px 3.10711px 6.21422px 0px;
+    margin: 0px;
+  }
 `;
 export const StepTextBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 22px;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 300px;
+  @media (max-width: 800px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const NumberCircle = styled.div`
