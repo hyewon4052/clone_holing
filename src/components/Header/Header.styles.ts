@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../../index.css";
 
 export const HeaderContainer = styled.nav`
   display: flex;
@@ -35,6 +36,7 @@ export const NavActions = styled.div`
 `;
 
 export const DownloadButton = styled.a`
+  font-family: "Suit-extrabold";
   height: 40px;
   padding: 0 30px;
   user-select: none;
@@ -51,9 +53,10 @@ export const DownloadButton = styled.a`
 `;
 
 export const LoginButton = styled.button`
+  font-family: "MapleStory";
   background: transparent;
   border: none;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   font-size: 16px;
   color: black;
