@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "../../index.css";
-import { SubText } from "../Section2/Section2.styles";
 
 export const QnAContainer = styled.div`
   width: 100%;
@@ -19,6 +18,9 @@ export const Title = styled.span`
   font-weight: 300;
   white-space: normal;
   line-height: 1.4;
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
 `;
 
 export const QuestionCardList = styled.div`
@@ -28,6 +30,9 @@ export const QuestionCardList = styled.div`
   flex-direction: column;
   gap: 24px;
   width: 100%;
+  @media (max-width: 800px) {
+    gap: 18px;
+  }
 `;
 
 export const QuestionCard = styled.div`
@@ -39,6 +44,9 @@ export const QuestionCard = styled.div`
   background: rgb(255, 255, 255);
   cursor: pointer;
   user-select: none;
+  @media (max-width: 800px) {
+    padding: 20px 18px;
+  }
 `;
 
 export const QuestionCardHeader = styled.div`
@@ -46,6 +54,11 @@ export const QuestionCardHeader = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  img {
+    @media (max-width: 800px) {
+      width: 16px;
+    }
+  }
 `;
 
 export const QuestionLabel = styled.div`
@@ -53,6 +66,12 @@ export const QuestionLabel = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  img {
+    width: 44px;
+    @media (max-width: 800px) {
+      width: 24px;
+    }
+  }
 `;
 
 export const QuestionTitle = styled.span`
@@ -61,6 +80,9 @@ export const QuestionTitle = styled.span`
   color: ${(props) => props.color || "black"};
   width: unset;
   white-space: normal;
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
 `;
 
 export const QuestionAnswer = styled.div`
@@ -74,4 +96,8 @@ export const QuestionAnswer = styled.div`
   line-height: 160%;
   letter-spacing: -0.027px;
   white-space: break-spaces;
+  @media (max-width: 800px) {
+    padding: 16px;
+    font-size: 16px;
+  }
 `;

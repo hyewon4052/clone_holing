@@ -42,7 +42,6 @@ function Section7() {
               <S.QuestionCardHeader>
                 <S.QuestionLabel>
                   <img
-                    width={44}
                     src={
                       isOpen
                         ? "/assets/images/root/qna/question_opened.svg"
