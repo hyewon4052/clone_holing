@@ -9,14 +9,17 @@ export const BannerContainer = styled.div`
   );
   display: flex;
   flex-direction: row;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
 `;
 
-export const BannerImg = styled.img`
-  width: 50vw;
+export const BannerImg = styled.div`
+  cursor: pointer;
+  z-index: 2;
   height: 120px;
-  background-repeat: no-repeat;
+  img {
+    margin: 0px auto;
+    display: block;
+    height: 100%;
+  }
 `;
