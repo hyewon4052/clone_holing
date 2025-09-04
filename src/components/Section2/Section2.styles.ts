@@ -6,7 +6,6 @@ export const GoalContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 80px;
-  -webkit-box-align: center;
   align-items: center;
   z-index: 0;
   width: 100%;
@@ -30,6 +29,10 @@ export const SubText = styled.span`
   color: black;
   font-size: 30px;
   font-weight: 500;
+  font-family: "SUIT";
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
 `;
 
 export const MainText = styled.span`
@@ -41,14 +44,22 @@ export const MainText = styled.span`
     color: #00b300;
   }
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: 32px;
+    line-height: 1.4;
+    white-space: normal;
+  }
 `;
 
 export const VideoBox = styled.div`
   flex-direction: column;
   gap: 54px;
-  -webkit-box-align: center;
   align-items: center;
   width: 785px;
+
+  @media (max-width: 800px) {
+    width: calc(100% - 50px);
+  }
 `;
 
 export const VideoWrapper = styled.div`
