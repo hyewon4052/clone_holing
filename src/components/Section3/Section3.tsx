@@ -132,6 +132,21 @@ function Section3() {
           </StepTextBox>
         </StepBox1>
         <StepBox2>
+          <StepImgBox
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.BASE_URL + "assets/images/root/steps/step4.png"
+              })`,
+            }}
+          >
+            <img
+              src={
+                import.meta.env.BASE_URL +
+                "assets/images/root/steps/step4_beaver.svg"
+              }
+              style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
+            />
+          </StepImgBox>
           <StepTextBox
             style={{ marginTop: "50px", marginLeft: "50px", width: "300px" }}
           >
@@ -151,21 +166,6 @@ function Section3() {
               보세요.
             </StepDescription>
           </StepTextBox>
-          <StepImgBox
-            style={{
-              backgroundImage: `url(${
-                import.meta.env.BASE_URL + "assets/images/root/steps/step4.png"
-              })`,
-            }}
-          >
-            <img
-              src={
-                import.meta.env.BASE_URL +
-                "assets/images/root/steps/step4_beaver.svg"
-              }
-              style={{ position: "absolute", right: "-73px", bottom: "-30px" }}
-            />
-          </StepImgBox>
         </StepBox2>
 
         <StepBox1>
