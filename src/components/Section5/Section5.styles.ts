@@ -23,7 +23,7 @@ export const ParentsCard = styled.div`
   gap: 20px;
   align-items: center;
   padding: 30px 40px;
-  width: 290px;
+  width: 376px;
   border-radius: 30px;
   background: rgb(255, 255, 255);
   box-shadow: rgba(85, 86, 86, 0.12) 4px 4px 20px 0px;
