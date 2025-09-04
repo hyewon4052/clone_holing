@@ -37,6 +37,13 @@ export const FooterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 800px) {
+    height: 549px;
+    padding: 60px 18px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 36px;
+  }
 `;
 
 export const FooterLeft = styled.div`
@@ -91,6 +98,11 @@ export const FooterCompanyInfo = styled.div`
   flex-direction: row;
   gap: 10px;
   align-items: center;
+  > FooterInfoItem {
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
 `;
 
 export const FooterInfoItem = styled.span`
@@ -126,6 +138,9 @@ export const FooterDownload = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const FooterDownloadButton = styled.div`
