@@ -7,17 +7,13 @@ import {
   CTAButton,
   MainImg,
   CloudBox,
+  NoticeText,
+  HighlightText,
 } from "./Section1.styles";
 
 function Section1() {
   return (
-    <IntroductionContainer
-      style={{
-        backgroundImage: `url(${
-          import.meta.env.BASE_URL + "assets/images/root/main/bg.png"
-        })`,
-      }}
-    >
+    <IntroductionContainer>
       <ContentBox>
         <Subtitle>스스로 학습하는 수학 공부 앱</Subtitle>
         <Title>홀링</Title>
@@ -26,7 +22,9 @@ function Section1() {
           <br />
           혼자서도 알차고 탄탄하게 공부해요
         </Description>
-        <CTAButton>무료체험 시작하기</CTAButton>
+        <a href="/signup?inviteCode=09ea221d3db11df1f369094ffb4bda7c">
+          <CTAButton style={{ marginTop: "80px" }}>무료체험 시작하기</CTAButton>
+        </a>
       </ContentBox>
       <MainImg>
         <img
@@ -34,13 +32,14 @@ function Section1() {
           height={"516px"}
           style={{ position: "relative" }}
         />
-        <CloudBox
-          style={{
-            backgroundImage: `url(${
-              import.meta.env.BASE_URL + "assets/images/root/main/CloudBox.svg"
-            })`,
-          }}
-        ></CloudBox>
+        <CloudBox>
+          <img src="/assets/images/root/main/tablet.svg" />
+          <NoticeText>
+            홀링 앱은 <HighlightText>태블릿, 스마트폰</HighlightText>에서
+            <br />
+            다운로드 및 이용 가능
+          </NoticeText>
+        </CloudBox>
       </MainImg>
     </IntroductionContainer>
   );
