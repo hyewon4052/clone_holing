@@ -9,23 +9,44 @@ import Section6 from "./components/Section6/Section6";
 import Section7 from "./components/Section7/Section7";
 import Section8 from "./components/Section8/Section8";
 import Footer from "./components/Footer/Footer";
+import styled from "styled-components";
 
 function App() {
   return (
-    <>
+    <Main>
       <Header />
-      <Section1 />
-      <Banner />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Footer />
-    </>
+      <Body>
+        <Section1 />
+        <Banner />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
+        <Section7 />
+        <Section8 />
+        <Footer />
+      </Body>
+    </Main>
   );
 }
 
 export default App;
+
+export const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+`;
+
+export const Main = styled.div`
+  width: 100%;
+  height: 100vh;
+  background: rgb(251, 251, 251);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
