@@ -13,11 +13,19 @@ export const StepContainer = styled.div`
   padding-bottom: 120px;
 `;
 
-export const StepBox = styled.div`
+export const StepBox1 = styled.div`
   display: flex;
   flex-direction: row;
   gap: 36px;
   align-items: start;
+  justify-content: flex-start;
+`;
+
+export const StepBox2 = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 36px;
+  align-items: flex-start;
   justify-content: flex-start;
 `;
 
@@ -86,4 +94,13 @@ export const StepDescription = styled.span`
   width: unset;
   white-space: break-spaces;
   line-height: 1.6;
+`;
+
+export const StepBoxList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  padding: 0px 40px;
+  max-width: 1280px;
 `;
