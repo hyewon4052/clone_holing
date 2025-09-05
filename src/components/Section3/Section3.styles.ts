@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const StepContainer = styled.div`
+export const StepLayout = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const StepContainer = styled.div`
   padding-bottom: 120px;
 `;
 
-export const StepBox1 = styled.div`
+export const StepLeftBox = styled.div`
   display: flex;
   flex-direction: row;
   gap: 36px;
@@ -25,7 +25,7 @@ export const StepBox1 = styled.div`
   }
 `;
 
-export const StepBox2 = styled.div`
+export const StepRightBox = styled.div`
   display: flex;
   flex-direction: row-reverse;
   gap: 36px;
@@ -109,7 +109,7 @@ export const StepImgBox = styled.div`
     }
   }
 `;
-export const StepTextBox = styled.div`
+export const StepTextBoxCol = styled.div`
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -126,7 +126,7 @@ export const StepTextBox = styled.div`
   }
 `;
 
-export const NumberCircle = styled.div`
+export const NumberCircleBox = styled.div`
   width: 54px;
   height: 54px;
   flex-shrink: 0;
@@ -161,7 +161,7 @@ export const NumberCircle = styled.div`
   }
 `;
 
-export const TitleBox = styled.div`
+export const TitleBoxCol = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -172,7 +172,7 @@ export const TitleBox = styled.div`
   }
 `;
 
-export const SubTitle = styled.span`
+export const SubTitleText = styled.span`
   color: var(--point_01);
   font-size: 20;
   font-weight: 300;
@@ -182,7 +182,7 @@ export const SubTitle = styled.span`
   }
 `;
 
-export const Title = styled.span`
+export const TitleText = styled.span`
   color: black;
   font-size: 38px;
   font-weight: 300;
@@ -192,12 +192,12 @@ export const Title = styled.span`
   }
 `;
 
-export const ContentSpan = styled.span`
+export const ContentText = styled.span`
   font-weight: 300;
   white-space: normal;
 `;
 
-export const StepDescription = styled.span`
+export const StepDescriptionText = styled.span`
   font-family: SUIT;
   font-size: 18px;
   font-weight: 500;
