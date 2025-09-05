@@ -1,4 +1,5 @@
 import * as S from "./Banner.styles";
+import "../../index.css";
 
 function Banner() {
   return (

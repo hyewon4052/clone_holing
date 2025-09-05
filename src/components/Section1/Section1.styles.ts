@@ -2,6 +2,7 @@ import styled from "styled-components";
 import "../../index.css";
 
 export const IntroductionContainer = styled.div`
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
   gap: 170px;
@@ -96,6 +97,9 @@ export const MainImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  img {
+    display: block;
+  }
 `;
 
 export const CloudBox = styled.div`
