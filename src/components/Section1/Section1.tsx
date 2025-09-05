@@ -26,8 +26,9 @@ function Section1() {
         <S.CloudBox>
           <img src="/assets/images/root/main/tablet.svg" />
           <S.NoticeText>
-            홀링 앱은 <S.HighlightText>태블릿, 스마트폰</S.HighlightText>에서
-            <br />
+            홀링 앱은 <S.MobileBr />
+            <S.HighlightText>태블릿, 스마트폰</S.HighlightText>에서
+            <S.MobileBr />
             다운로드 및 이용 가능
           </S.NoticeText>
         </S.CloudBox>

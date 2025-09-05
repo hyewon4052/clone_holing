@@ -34,7 +34,7 @@ export const ContentBox = styled.div`
 `;
 
 export const Subtitle = styled.span`
-  font-family: "Suit-semibold";
+  font-family: "SUIT";
   font-size: 30px;
   font-weight: 700;
   color: black;
@@ -42,10 +42,12 @@ export const Subtitle = styled.span`
   width: unset;
   white-space: normal;
   line-height: 1.5;
+  @media (max-width: 800px) {
+    font-size: 22px;
+  }
 `;
 
 export const Title = styled.h1`
-  font-family: "Maplestory";
   font-size: 90px;
   font-weight: 400;
   color: black;
@@ -57,6 +59,7 @@ export const Title = styled.h1`
   @media (max-width: 800px) {
     align-items: center;
     justify-content: center;
+    font-size: 52px;
   }
 `;
 
@@ -68,6 +71,11 @@ export const Description = styled.span`
   width: unset;
   white-space: normal;
   line-height: 1.6;
+  margin-top: 28px;
+  @media (max-width: 800px) {
+    font-size: 18px;
+    text-align: center;
+  }
 `;
 
 export const CTAButton = styled.button`
@@ -97,8 +105,12 @@ export const MainImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
+  > img {
     display: block;
+    height: 516px;
+    @media (max-width: 800px) {
+      height: 290px;
+    }
   }
 `;
 
@@ -114,6 +126,16 @@ export const CloudBox = styled.div`
   width: 436px;
   height: 114px;
   padding: 35px 28px 35px 49px;
+  @media (max-width: 800px) {
+    width: 320px;
+    height: 83px;
+    padding: 21px 62px 20px;
+  }
+  > img {
+    @media (max-width: 800px) {
+      width: 47px;
+    }
+  }
 `;
 
 export const NoticeText = styled.span`
@@ -123,6 +145,10 @@ export const NoticeText = styled.span`
   text-align: center;
   width: unset;
   white-space: normal;
+  @media (max-width: 800px) {
+    font-size: 14px;
+    text-align: left;
+  }
 `;
 
 export const HighlightText = styled.span`
@@ -132,4 +158,14 @@ export const HighlightText = styled.span`
   text-align: center;
   width: unset;
   white-space: normal;
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
+`;
+
+export const MobileBr = styled.br`
+  display: none;
+  @media (max-width: 800px) {
+    display: inline-block;
+  }
 `;
