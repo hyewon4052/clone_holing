@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const BannerContainer = styled.div`
+export const BannerLayout = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ export const BannerContainer = styled.div`
   }
 `;
 
-export const BannerImg = styled.div`
+export const BannerBgRow = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -30,7 +30,7 @@ export const BannerImg = styled.div`
   }
 `;
 
-export const BannerColor = styled.div`
+export const BannerOverlayCol = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -39,7 +39,7 @@ export const BannerColor = styled.div`
   border-radius: 20px;
 `;
 
-export const BannerContent = styled.div`
+export const BannerContentRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 7px;
@@ -90,7 +90,7 @@ export const BannerText = styled.span`
   }
 `;
 
-export const ServiceContainer = styled.div`
+export const ServiceLayout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +101,7 @@ export const ServiceContainer = styled.div`
   }
 `;
 
-export const ServiceContent = styled.div`
+export const ServiceContentCol = styled.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -133,7 +133,7 @@ export const ServiceList = styled.div`
   width: 100%;
 `;
 
-export const ServiceItem = styled.div`
+export const ServiceItemRow = styled.div`
   display: flex;
   flex-direction: row;
   @media (max-width: 800px) {
@@ -141,7 +141,7 @@ export const ServiceItem = styled.div`
   }
 `;
 
-export const ServiceImg = styled.div`
+export const ServiceImgBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -160,7 +160,7 @@ export const ServiceImg = styled.div`
   }
 `;
 
-export const ServiceDetail = styled.div`
+export const ServiceDetailCol = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 32px;
@@ -179,7 +179,7 @@ export const ServiceTitleBox = styled.div`
   gap: 10px;
 `;
 
-export const ServiceTitle = styled.span`
+export const ServiceTitleText = styled.span`
   color: rgb(18, 22, 25);
   font-family: Pretendard;
   font-size: 38px;
@@ -195,7 +195,7 @@ export const ServiceTitle = styled.span`
   }
 `;
 
-export const ServiceSubTitle = styled.span`
+export const ServiceSubTitleText = styled.span`
   color: rgb(18, 22, 25);
   font-family: SUIT;
   font-size: 24px;
@@ -211,7 +211,7 @@ export const ServiceSubTitle = styled.span`
   }
 `;
 
-export const ServiceDescription = styled.span`
+export const ServiceDescriptionText = styled.span`
   color: rgb(117, 126, 133);
   font-family: Pretendard;
   font-size: 18px;
@@ -230,7 +230,7 @@ export const ServiceDescription = styled.span`
   }
 `;
 
-export const FlexRow20 = styled.div`
+export const ServiceIconRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -239,7 +239,7 @@ export const FlexRow20 = styled.div`
   }
 `;
 
-export const BtnWrapper = styled.div`
+export const BtnRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -279,7 +279,7 @@ export const ThickBtnBox = styled.a`
   }
 `;
 
-export const BtnContent = styled.span`
+export const BtnContentCol = styled.span`
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -291,7 +291,7 @@ export const BtnContent = styled.span`
   flex-shrink: 0;
 `;
 
-export const BtnTitle = styled.span`
+export const BtnTitleText = styled.span`
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -302,7 +302,7 @@ export const BtnTitle = styled.span`
   line-height: inherit;
 `;
 
-export const BtnText = styled.span`
+export const BtnSubText = styled.span`
   font-family: inherit;
   font-size: 0.8em;
   font-weight: 400;
