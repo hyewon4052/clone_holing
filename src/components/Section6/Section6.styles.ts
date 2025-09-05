@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Background = styled.div`
+export const BannerLayout = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -18,14 +18,14 @@ export const Background = styled.div`
   }
 `;
 
-export const TextBox = styled.div`
+export const BannerTextRow = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 `;
 
-export const SubTitle = styled.span`
+export const BannerSubTitleText = styled.span`
   font-family: inherit;
   font-size: 30px;
   font-weight: 300;
@@ -39,7 +39,7 @@ export const SubTitle = styled.span`
   }
 `;
 
-export const Title = styled.span`
+export const BannerTitleText = styled.span`
   font-family: inherit;
   font-size: 48px;
   color: rgb(18, 22, 25);
@@ -52,7 +52,7 @@ export const Title = styled.span`
   }
 `;
 
-export const LoginBtn = styled.div`
+export const BannerBtnBox = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;

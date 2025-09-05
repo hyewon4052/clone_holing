@@ -1,17 +1,20 @@
-import { TextBox } from "../Section2/Section2.styles";
-import { Background, SubTitle, Title, LoginBtn } from "./Section6.styles";
+import * as S from "./Section6.styles";
 
 function Section6() {
   return (
-    <Background>
-      <TextBox>
-        <SubTitle>학교, 학원에서 120만 학생이 경험한 수학 학습 솔루션</SubTitle>
-        <Title>우리 아이의 첫 수학 학습, 홀링으로 시작하세요.</Title>
-      </TextBox>
+    <S.BannerLayout>
+      <S.BannerTextRow>
+        <S.BannerSubTitleText>
+          학교, 학원에서 120만 학생이 경험한 수학 학습 솔루션
+        </S.BannerSubTitleText>
+        <S.BannerTitleText>
+          우리 아이의 첫 수학 학습, 홀링으로 시작하세요.
+        </S.BannerTitleText>
+      </S.BannerTextRow>
       <a>
-        <LoginBtn>구독하기</LoginBtn>
+        <S.BannerBtnBox>구독하기</S.BannerBtnBox>
       </a>
-    </Background>
+    </S.BannerLayout>
   );
 }
 
