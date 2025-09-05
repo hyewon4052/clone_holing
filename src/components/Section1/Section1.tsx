@@ -28,11 +28,12 @@ function Section1() {
           <S.NoticeText>
             홀링 앱은 <S.MobileBr />
             <S.HighlightText>태블릿, 스마트폰</S.HighlightText>에서
-            <S.MobileBr />
+            <br />
             다운로드 및 이용 가능
           </S.NoticeText>
         </S.CloudBox>
       </S.MainImg>
+      <S.CTAMobileButton>무료체험 시작하기</S.CTAMobileButton>
     </S.IntroductionContainer>
   );
 }

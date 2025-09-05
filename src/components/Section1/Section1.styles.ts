@@ -99,6 +99,35 @@ export const CTAButton = styled.button`
   line-height: normal;
   letter-spacing: 0.52px;
   transition: transform 0.2s ease-in-out;
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+
+export const CTAMobileButton = styled.button`
+  display: none;
+  @media (max-width: 800px) {
+    font-family: "Maplestory";
+    display: flex;
+    width: 280px;
+    height: 77px;
+    padding-top: 18px;
+    font-size: 22px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.723px;
+    border-radius: 44px;
+    background: #00ab15;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 0px 0px inset;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.52px;
+    transition: transform 0.2s ease-in-out;
+  }
 `;
 
 export const MainImg = styled.div`
