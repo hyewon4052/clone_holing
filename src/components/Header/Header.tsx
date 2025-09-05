@@ -13,6 +13,9 @@ function Header() {
             앱 다운로드
           </S.DownloadButton>
           <S.LoginButton>로그인</S.LoginButton>
+          <S.MobileLoginButton>
+            <img src="assets/images/common/signed_out.svg" />
+          </S.MobileLoginButton>
         </S.NavActions>
       </S.Wrapper>
     </S.HeaderContainer>

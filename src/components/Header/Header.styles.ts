@@ -37,7 +37,7 @@ export const NavActions = styled.div`
 `;
 
 export const DownloadButton = styled.a`
-  font-family: "Suit-extrabold";
+  font-family: Suit;
   height: 40px;
   padding: 0 30px;
   user-select: none;
@@ -51,6 +51,11 @@ export const DownloadButton = styled.a`
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  @media (max-width: 800px) {
+    padding: 0px 15px 0px;
+    font-size: 14px;
+  }
 `;
 
 export const LoginButton = styled.button`
@@ -63,5 +68,16 @@ export const LoginButton = styled.button`
   color: black;
   &:hover {
     color: #00b300;
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+
+export const MobileLoginButton = styled.a`
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
   }
 `;
