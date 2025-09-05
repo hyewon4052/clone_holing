@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const HeaderContainer = styled.nav`
+export const HeaderLayout = styled.nav`
   margin: 0;
   display: flex;
   background: white;
@@ -13,7 +13,7 @@ export const HeaderContainer = styled.nav`
   position: fixed;
 `;
 
-export const Wrapper = styled.div`
+export const HeaderContentRow = styled.div`
   display: flex;
   width: 100%;
   max-width: 1280px;
@@ -24,13 +24,13 @@ export const Wrapper = styled.div`
   padding: 0px 40px;
 `;
 
-export const Logo = styled.img`
+export const LogoImg = styled.img`
   height: 60px;
   width: 60px;
   cursor: pointer;
 `;
 
-export const NavActions = styled.div`
+export const NavActionsBox = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
