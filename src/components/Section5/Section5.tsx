@@ -40,7 +40,11 @@ function Section5() {
               <S.ParentsTextWrapper>
                 <S.ParentsImgWrapper>
                   <img src={p.img} width="100%" />
-                  <img src="assets/images/root/parents/quote.svg" />
+                  <img
+                    src="assets/images/root/parents/quote.svg"
+                    width="50"
+                    style={{ position: "relative", top: "-12px" }}
+                  />
                 </S.ParentsImgWrapper>
                 <S.ParentsTitle>{p.title}</S.ParentsTitle>
                 <S.ParentsAuthor>

@@ -2,10 +2,10 @@ import styled from "styled-components";
 import "../../index.css";
 
 export const ParentsContainer = styled.div`
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 80px;
-  -webkit-box-align: center;
   align-items: center;
   width: 100%;
   padding: 120px 20px;
@@ -27,11 +27,11 @@ export const ParentsCard = styled.div`
   gap: 20px;
   align-items: center;
   padding: 30px 40px;
-  /* width: 376px; */
+  width: 376px;
   border-radius: 30px;
   background: rgb(255, 255, 255);
   box-shadow: rgba(85, 86, 86, 0.12) 4px 4px 20px 0px;
-  @media (max-width: 800) {
+  @media (max-width: 800px) {
     padding: 30px 20px;
     width: calc(100%);
   }
