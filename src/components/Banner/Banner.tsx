@@ -3,7 +3,7 @@ import "../../index.css";
 
 function Banner() {
   return (
-    <S.BannerContainer style={{ width: "100%" }}>
+    <S.BannerContainer>
       <S.BannerImg>
         <img src="/assets/images/root/banner/banner_invite.png" />
       </S.BannerImg>

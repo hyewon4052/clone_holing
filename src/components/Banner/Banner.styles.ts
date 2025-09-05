@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const BannerContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,7 +14,6 @@ export const BannerContainer = styled.div`
   );
   @media (max-width: 800px) {
     width: 100%;
-
     flex-direction: column;
   }
 `;
@@ -23,7 +23,7 @@ export const BannerImg = styled.div`
   z-index: 2;
   height: 120px;
   @media (max-width: 800px) {
-    height: auto;
+    height: unset;
   }
   img {
     margin: 0px auto;
@@ -33,6 +33,7 @@ export const BannerImg = styled.div`
       margin: 0px auto;
       display: block;
       width: 100%;
+      height: auto;
     }
   }
 `;
