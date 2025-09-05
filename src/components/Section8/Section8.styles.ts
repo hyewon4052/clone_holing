@@ -95,7 +95,10 @@ export const ServiceContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: rgb(223, 245, 254);
+  background: white;
+  @media (max-width: 800px) {
+    padding: 80px 20px;
+  }
 `;
 
 export const ServiceContent = styled.div`
@@ -148,6 +151,13 @@ export const ServiceImg = styled.div`
     width: 100%;
     justify-content: center;
   }
+  img {
+    width: 525px;
+    max-width: 100%;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
 `;
 
 export const ServiceDetail = styled.div`
@@ -157,6 +167,7 @@ export const ServiceDetail = styled.div`
   padding-left: 64px;
   @media (max-width: 800px) {
     padding-top: 30px;
+    padding-left: 0px;
     justify-content: center;
     align-items: center;
   }
@@ -177,6 +188,11 @@ export const ServiceTitle = styled.span`
   line-height: normal;
   letter-spacing: -0.38px;
   margin-bottom: 10px;
+  @media (max-width: 800px) {
+    font-size: 24px;
+    font-weight: 600px;
+    margin-bottom: 0px;
+  }
 `;
 
 export const ServiceSubTitle = styled.span`
@@ -184,9 +200,15 @@ export const ServiceSubTitle = styled.span`
   font-family: SUIT;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: normal;
   margin-bottom: 24px;
+  @media (max-width: 800px) {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    white-space: pre-line;
+  }
 `;
 
 export const ServiceDescription = styled.span`
@@ -199,20 +221,39 @@ export const ServiceDescription = styled.span`
   letter-spacing: -0.027px;
   white-space: break-spaces;
   margin-bottom: 24px;
+  @media (max-width: 800px) {
+    color: rgb(119, 119, 119);
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
 `;
 
 export const FlexRow20 = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
+  @media (max-width: 800px) {
+    gap: 10px;
+  }
+`;
+
+export const BtnWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 65px;
+  @media (max-width: 800px) {
+    gap: 10px;
+    margin-top: 24px;
+  }
 `;
 
 export const ThickBtnBox = styled.a`
   display: flex;
   padding: 10px 40px;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   gap: 14px;
   flex-shrink: 0;
@@ -229,6 +270,13 @@ export const ThickBtnBox = styled.a`
   cursor: pointer;
   user-select: none;
   transition: transform 0.1s ease-in-out;
+  @media (max-width: 800px) {
+    width: 156px;
+    height: 64px;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+  }
 `;
 
 export const BtnContent = styled.span`
@@ -268,9 +316,7 @@ export const BtnText = styled.span`
 export const ThinBtnBox = styled.a`
   display: flex;
   padding: 10px 40px;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   gap: 14px;
   flex-shrink: 0;
@@ -282,9 +328,16 @@ export const ThinBtnBox = styled.a`
   font-family: SUIT;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   line-height: 136%;
   cursor: pointer;
   user-select: none;
   transition: transform 0.1s ease-in-out;
+  @media (max-width: 800px) {
+    line-height: 20px;
+    gap: 10px;
+    width: 260px;
+    height: 56px;
+    font-size: 18px;
+  }
 `;

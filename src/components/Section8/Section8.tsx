@@ -30,11 +30,7 @@ function Section8() {
           <S.ServiceList style={{ width: "100%" }}>
             <S.ServiceItem>
               <S.ServiceImg>
-                <img
-                  width={525}
-                  src="/assets/images/root/services/service_01.png"
-                  style={{ maxWidth: "100%" }}
-                />
+                <img src="/assets/images/root/services/service_01.png" />
               </S.ServiceImg>
               <S.ServiceDetail>
                 <S.ServiceTitleBox>
@@ -60,11 +56,8 @@ function Section8() {
                   />
                   <img src="/assets/images/root/services/b2b.svg" width={100} />
                 </S.FlexRow20>
-                <S.FlexRow20>
-                  <S.ThickBtnBox
-                    href="https://www.matholic.com/"
-                    style={{ marginTop: "65px" }}
-                  >
+                <S.BtnWrapper>
+                  <S.ThickBtnBox href="https://www.matholic.com/">
                     <S.BtnContent>
                       <S.BtnTitle>바로가기</S.BtnTitle> <br />
                       <S.BtnText>(학원용 매쓰홀릭)</S.BtnText>
@@ -74,10 +67,7 @@ function Section8() {
                       height={14}
                     />
                   </S.ThickBtnBox>
-                  <S.ThickBtnBox
-                    href="https://school.matholic.com/"
-                    style={{ marginTop: "65px" }}
-                  >
+                  <S.ThickBtnBox href="https://school.matholic.com/">
                     <S.BtnContent>
                       <S.BtnTitle>바로가기</S.BtnTitle> <br />
                       <S.BtnText>(학교용 매쓰홀릭)</S.BtnText>
@@ -87,17 +77,13 @@ function Section8() {
                       height={14}
                     />
                   </S.ThickBtnBox>
-                </S.FlexRow20>
+                </S.BtnWrapper>
               </S.ServiceDetail>
             </S.ServiceItem>
 
             <S.ServiceItem>
               <S.ServiceImg>
-                <img
-                  width={525}
-                  src="/assets/images/root/services/service_02.png"
-                  style={{ maxWidth: "100%" }}
-                />
+                <img src="/assets/images/root/services/service_02.png" />
               </S.ServiceImg>
               <S.ServiceDetail>
                 <S.ServiceTitleBox>
@@ -118,11 +104,8 @@ function Section8() {
                     width={100}
                   />
                 </S.FlexRow20>
-                <S.FlexRow20>
-                  <S.ThinBtnBox
-                    href="https://ysdj.kr/"
-                    style={{ marginTop: "65px" }}
-                  >
+                <S.BtnWrapper>
+                  <S.ThinBtnBox href="https://ysdj.kr/">
                     <S.BtnContent>
                       <S.BtnTitle>바로가기</S.BtnTitle>
                     </S.BtnContent>
@@ -131,17 +114,13 @@ function Section8() {
                       height={14}
                     />
                   </S.ThinBtnBox>
-                </S.FlexRow20>
+                </S.BtnWrapper>
               </S.ServiceDetail>
             </S.ServiceItem>
 
             <S.ServiceItem>
               <S.ServiceImg>
-                <img
-                  width={525}
-                  src="/assets/images/root/services/service_03.png"
-                  style={{ maxWidth: "100%" }}
-                />
+                <img src="/assets/images/root/services/service_03.png" />
               </S.ServiceImg>
               <S.ServiceDetail>
                 <S.ServiceTitleBox>
@@ -162,11 +141,8 @@ function Section8() {
                     width={100}
                   />
                 </S.FlexRow20>
-                <S.FlexRow20>
-                  <S.ThinBtnBox
-                    href="https://shdj.kr/"
-                    style={{ marginTop: "65px" }}
-                  >
+                <S.BtnWrapper>
+                  <S.ThinBtnBox href="https://shdj.kr/">
                     <S.BtnContent>
                       <S.BtnTitle>바로가기</S.BtnTitle>
                     </S.BtnContent>
@@ -175,7 +151,7 @@ function Section8() {
                       height={14}
                     />
                   </S.ThinBtnBox>
-                </S.FlexRow20>
+                </S.BtnWrapper>
               </S.ServiceDetail>
             </S.ServiceItem>
           </S.ServiceList>
