@@ -25,23 +25,17 @@ export const ReasonBox = styled.div`
 export const ReasonContentBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  align-items: center;
-  width: 450px;
-`;
-
-export const ReasonText = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  gap: 24px;
   align-items: center;
   img {
     width: 100%;
   }
+  @media (max-width: 800px) {
+    width: calc(100% - 80px);
+  }
 `;
 
 export const ReasonSpan = styled.span`
-  font-family: "MapleStory";
   font-size: 34px;
   font-weight: 300;
   color: black;
@@ -49,4 +43,7 @@ export const ReasonSpan = styled.span`
   white-space: break-spaces;
   line-height: 1.4;
   letter-spacing: -0.68px;
+  @media (max-width: 800px) {
+    font-size: 24px;
+  }
 `;
