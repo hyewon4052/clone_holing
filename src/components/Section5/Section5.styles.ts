@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const ParentsContainer = styled.div`
+export const ParentsLayout = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ export const ParentsContainer = styled.div`
   }
 `;
 
-export const ParentsImgWrapper = styled.div`
+export const ParentsImgBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@ export const ParentsCard = styled.div`
   }
 `;
 
-export const ParentsTextWrapper = styled.div`
+export const ParentsCardHeaderCol = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -55,16 +55,7 @@ export const ParentsDescription = styled.div`
   height: 116px;
   color: black;
 `;
-
-export const ParentsContentBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 36px;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const ParentsTitle = styled.span`
+export const ParentsTitleText = styled.span`
   font-size: 30px;
   font-weight: 300;
   color: black;
@@ -74,7 +65,7 @@ export const ParentsTitle = styled.span`
   line-height: 1.4;
 `;
 
-export const ParentsAuthor = styled.div`
+export const ParentsContentCol = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -85,7 +76,7 @@ export const ParentsAuthor = styled.div`
   color: rgb(117, 126, 133);
 `;
 
-export const ParentsName = styled.span`
+export const ParentsNameText = styled.span`
   font-family: "Suit-regular";
   font-size: 16px;
   font-weight: 500;
@@ -99,14 +90,14 @@ export const VerticalLine = styled.div`
   background-color: rgb(217, 221, 224);
 `;
 
-export const ParentsInfo = styled.span`
+export const ParentsInfoText = styled.span`
   font-family: "Suit-regular";
   font-size: 16px;
   font-weight: 500;
   white-space: normal;
 `;
 
-export const ParentsBox = styled.div`
+export const ParentsCardList = styled.div`
   display: flex;
   flex-direction: row;
   gap: 36px;

@@ -27,38 +27,38 @@ function Section5() {
   ];
 
   return (
-    <S.ParentsContainer>
+    <S.ParentsLayout>
       <TextBox>
         <MainText>
           <span style={{ color: "00AB15" }}>학부모</span>가 이야기하는 홀링
         </MainText>
       </TextBox>
-      <S.ParentsBox>
+      <S.ParentsCardList>
         {parents.map((p) => {
           return (
             <S.ParentsCard>
-              <S.ParentsTextWrapper>
-                <S.ParentsImgWrapper>
+              <S.ParentsCardHeaderCol>
+                <S.ParentsImgBox>
                   <img src={p.img} width="100%" />
                   <img
                     src="assets/images/root/parents/quote.svg"
                     width="50"
                     style={{ position: "relative", top: "-12px" }}
                   />
-                </S.ParentsImgWrapper>
-                <S.ParentsTitle>{p.title}</S.ParentsTitle>
-                <S.ParentsAuthor>
-                  <S.ParentsName>{p.name}</S.ParentsName>
+                </S.ParentsImgBox>
+                <S.ParentsTitleText>{p.title}</S.ParentsTitleText>
+                <S.ParentsContentCol>
+                  <S.ParentsNameText>{p.name}</S.ParentsNameText>
                   <S.VerticalLine />
-                  <S.ParentsInfo>{p.info}</S.ParentsInfo>
-                </S.ParentsAuthor>
-              </S.ParentsTextWrapper>
+                  <S.ParentsInfoText>{p.info}</S.ParentsInfoText>
+                </S.ParentsContentCol>
+              </S.ParentsCardHeaderCol>
               <S.ParentsDescription>{p.desc}</S.ParentsDescription>
             </S.ParentsCard>
           );
         })}
-      </S.ParentsBox>
-    </S.ParentsContainer>
+      </S.ParentsCardList>
+    </S.ParentsLayout>
   );
 }
 
