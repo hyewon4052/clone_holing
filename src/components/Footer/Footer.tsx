@@ -3,15 +3,15 @@ import * as S from "./Footer.styles";
 function Footer() {
   return (
     <>
-      <S.FooterContainer>
-        <S.FooterAnimation />
-        <S.FooterContentBox>
-          <S.FooterWrapper>
-            <S.FooterLeft>
-              <S.FooterBlock>
+      <S.FooterLayout>
+        <S.FooterAnimationBox />
+        <S.FooterContentBoxCol>
+          <S.FooterContentBox>
+            <S.FooterLeftBox>
+              <S.FooterBlockBox>
                 <img src="/assets/images/footer/company_logo.svg" width={225} />
-                <S.FooterBlock style={{ padding: " 10px 0px" }}>
-                  <S.FooterRow>
+                <S.FooterBlockBox style={{ padding: " 10px 0px" }}>
+                  <S.FooterTextRow>
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -41,67 +41,69 @@ function Footer() {
                         <path d="M10 3V5H5V19H19V14H21V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H10ZM17.7071 7.70711L12 13.4142L10.5858 12L16.2929 6.29289L13 3H21V11L17.7071 7.70711Z"></path>
                       </svg>
                     </S.FooterTextWrapper>
-                  </S.FooterRow>
-                  <S.FooterRow>
+                  </S.FooterTextRow>
+                  <S.FooterTextRow>
                     <img src="/assets/images/footer/email.svg" />
                     <S.FooterText>help@matholic.net</S.FooterText>
-                  </S.FooterRow>
-                  <S.FooterRow>
+                  </S.FooterTextRow>
+                  <S.FooterTextRow>
                     <img src="/assets/images/footer/location.svg" />
                     <S.FooterText>
                       서울특별시 강남구 남부순환로351길 4,
                       <S.MobileBr />
                       STAY 77, 3층
                     </S.FooterText>
-                  </S.FooterRow>
-                </S.FooterBlock>
-              </S.FooterBlock>
-              <S.FooterBlock>
-                <S.FooterCopyright>© 2025 Matholic Inc.</S.FooterCopyright>
-                <S.FooterCompanyInfo>
-                  <S.FooterMobileWrapper>
-                    <S.FooterInfoItem>(주)매쓰홀릭</S.FooterInfoItem>
+                  </S.FooterTextRow>
+                </S.FooterBlockBox>
+              </S.FooterBlockBox>
+              <S.FooterBlockBox>
+                <S.FooterCopyrightText>
+                  © 2025 Matholic Inc.
+                </S.FooterCopyrightText>
+                <S.CompanyInfoBoxRow>
+                  <S.FooterMobileBoxRow>
+                    <S.FooterInfoText>(주)매쓰홀릭</S.FooterInfoText>
                     <S.FooterDivider />
-                    <S.FooterInfoItem>대표이사 강지훈, 김영희</S.FooterInfoItem>
-                  </S.FooterMobileWrapper>
+                    <S.FooterInfoText>대표이사 강지훈, 김영희</S.FooterInfoText>
+                  </S.FooterMobileBoxRow>
                   <S.FooterMobileDivider />
-                  <S.FooterInfoItem>
+                  <S.FooterInfoText>
                     사업자등록번호 119-86-42991
-                  </S.FooterInfoItem>
+                  </S.FooterInfoText>
                   <S.FooterMobileDivider />
-                  <S.FooterInfoItem>
+                  <S.FooterInfoText>
                     통신판매업신고 2025-서울강남-04724
-                  </S.FooterInfoItem>
+                  </S.FooterInfoText>
                   <S.FooterMobileDivider />
-                </S.FooterCompanyInfo>
-                <S.FooterCompanyInfo
+                </S.CompanyInfoBoxRow>
+                <S.CompanyInfoBoxRow
                   style={{ flexDirection: "row", alignItems: "center" }}
                 >
                   <a
                     href="https://parking.matholic.com/policy/service"
                     target="_blank"
                   >
-                    <S.FooterLinkItem>이용약관</S.FooterLinkItem>
+                    <S.FooterLinkBox>이용약관</S.FooterLinkBox>
                   </a>
                   <S.FooterDivider />
                   <a
                     href="https://parking.matholic.com/policy/privacy"
                     target="_blank"
                   >
-                    <S.FooterLinkItem>개인정보처리방침</S.FooterLinkItem>
+                    <S.FooterLinkBox>개인정보처리방침</S.FooterLinkBox>
                   </a>
                   <S.FooterDivider />
                   <a
                     href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1198642991"
                     target="_blank"
                   >
-                    <S.FooterLinkItem>사업자정보</S.FooterLinkItem>
+                    <S.FooterLinkBox>사업자정보</S.FooterLinkBox>
                   </a>
-                </S.FooterCompanyInfo>
-              </S.FooterBlock>
-            </S.FooterLeft>
-            <S.FooterRight>
-              <S.FooterDownload>
+                </S.CompanyInfoBoxRow>
+              </S.FooterBlockBox>
+            </S.FooterLeftBox>
+            <S.FooterRightBox>
+              <S.FooterDownloadBox>
                 <a href="https://apps.apple.com/kr/app/%ED%92%80%EB%9E%AD/id6478107698">
                   <S.FooterDownloadButton>
                     iOS 앱 다운로드
@@ -112,25 +114,25 @@ function Footer() {
                     Android 앱 다운로드
                   </S.FooterDownloadButton>
                 </a>
-              </S.FooterDownload>
-              <S.FooterSocials>
+              </S.FooterDownloadBox>
+              <S.FooterSocialsBox>
                 <a href="https://blog.naver.com/ilovematholic">
-                  <S.FooterSocialIcon src="/assets/images/footer/sns/blog.svg"></S.FooterSocialIcon>
+                  <S.FooterIconImg src="/assets/images/footer/sns/blog.svg"></S.FooterIconImg>
                 </a>
                 <a href="https://www.youtube.com/channel/UC0f2occwFdAosou2Ds29AUw">
-                  <S.FooterSocialIcon src="/assets/images/footer/sns/youtube.svg"></S.FooterSocialIcon>
+                  <S.FooterIconImg src="/assets/images/footer/sns/youtube.svg"></S.FooterIconImg>
                 </a>
                 <a href="https://www.facebook.com/ilovematholic">
-                  <S.FooterSocialIcon src="/assets/images/footer/sns/facebook.svg"></S.FooterSocialIcon>
+                  <S.FooterIconImg src="/assets/images/footer/sns/facebook.svg"></S.FooterIconImg>
                 </a>
                 <a href="https://www.instagram.com/holing_official">
-                  <S.FooterSocialIcon src="/assets/images/footer/sns/instagram.svg"></S.FooterSocialIcon>
+                  <S.FooterIconImg src="/assets/images/footer/sns/instagram.svg"></S.FooterIconImg>
                 </a>
-              </S.FooterSocials>
-            </S.FooterRight>
-          </S.FooterWrapper>
-        </S.FooterContentBox>
-      </S.FooterContainer>
+              </S.FooterSocialsBox>
+            </S.FooterRightBox>
+          </S.FooterContentBox>
+        </S.FooterContentBoxCol>
+      </S.FooterLayout>
     </>
   );
 }

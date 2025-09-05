@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const FooterContainer = styled.div`
+export const FooterLayout = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   background: white;
 `;
 
-export const FooterAnimation = styled.div`
+export const FooterAnimationBox = styled.div`
   width: 100%;
   height: 78px;
   background-image: url(/assets/images/footer/flow.svg);
@@ -18,7 +18,7 @@ export const FooterAnimation = styled.div`
   animation: 150s linear 0s infinite normal none running animation-yv27ub;
 `;
 
-export const FooterContentBox = styled.div`
+export const FooterContentBoxCol = styled.div`
   background: rgb(193, 233, 248);
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ export const FooterContentBox = styled.div`
   }
 `;
 
-export const FooterWrapper = styled.div`
+export const FooterContentBox = styled.div`
   width: 100%;
   max-width: 1280px;
   height: 384px;
@@ -55,7 +55,7 @@ export const FooterWrapper = styled.div`
   }
 `;
 
-export const FooterLeft = styled.div`
+export const FooterLeftBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,13 +65,13 @@ export const FooterLeft = styled.div`
   }
 `;
 
-export const FooterBlock = styled.div`
+export const FooterBlockBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
 `;
 
-export const FooterRow = styled.div`
+export const FooterTextRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -94,7 +94,7 @@ export const FooterText = styled.span`
   white-space: break-spaces;
 `;
 
-export const FooterCopyright = styled.span`
+export const FooterCopyrightText = styled.span`
   font-family: "Suit-extrabold";
   font-size: 16px;
   font-weight: 600;
@@ -105,7 +105,7 @@ export const FooterCopyright = styled.span`
   line-height: inherit;
 `;
 
-export const FooterCompanyInfo = styled.div`
+export const CompanyInfoBoxRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -117,7 +117,7 @@ export const FooterCompanyInfo = styled.div`
   }
 `;
 
-export const FooterInfoItem = styled.span`
+export const FooterInfoText = styled.span`
   color: rgb(88, 145, 166);
   font-family: "Suit-extrabold";
   font-size: 14px;
@@ -146,7 +146,7 @@ export const FooterMobileDivider = styled.div`
   }
 `;
 
-export const FooterLinkItem = styled.div`
+export const FooterLinkBox = styled.div`
   color: rgb(122, 175, 194);
   font-family: "SUIT";
   font-size: 14px;
@@ -158,13 +158,13 @@ export const FooterLinkItem = styled.div`
   }
 `;
 
-export const FooterRight = styled.div`
+export const FooterRightBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
 `;
 
-export const FooterDownload = styled.div`
+export const FooterDownloadBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -196,19 +196,19 @@ export const FooterDownloadButton = styled.div`
   transition: transform 0.2s ease-in-out;
 `;
 
-export const FooterSocials = styled.div`
+export const FooterSocialsBox = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
 `;
 
-export const FooterSocialIcon = styled.img`
+export const FooterIconImg = styled.img`
   cursor: pointer;
   user-select: none;
   transition: transform 0.2s ease-in-out;
 `;
 
-export const FooterMobileWrapper = styled.div`
+export const FooterMobileBoxRow = styled.div`
   display: none;
   @media (max-width: 800px) {
     display: flex;
