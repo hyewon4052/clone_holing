@@ -1,15 +1,83 @@
 @font-face {
-    font-family: 'Maplestory';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
-    font-weight: 300;
-    font-display: swap;
+  font-family: "Maplestory";
+  src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Maplestory';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
+  font-family: "ONE Mobile POP";
+  src: local("ONE Mobile POP"),
+    url("/assets/fonts/ONE Mobile POP/ONE-Mobile-POP.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SUIT";
+  font-weight: 400;
+  src: local("SUIT Regular"),
+    url(/assets/fonts/suit/SUIT-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SUIT";
+  font-weight: 500;
+  src: local("SUIT Regular"),
+    url(/assets/fonts/suit/SUIT-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SUIT";
+  font-weight: 600;
+  src: local("SUIT SemiBold"),
+    url(/assets/fonts/suit/SUIT-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SUIT";
+  font-weight: 700;
+  src: local("SUIT SemiBold"),
+    url(/assets/fonts/suit/SUIT-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SUIT";
+  font-weight: 800;
+  src: local("SUIT ExtraBold"),
+    url(/assets/fonts/suit/SUIT-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "SUIT";
+  font-weight: 900;
+  src: local("SUIT Heavy"),
+    url(/assets/fonts/suit/SUIT-Heavy.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: MapleStory OTF;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Maplestory OTF Light"),
+    url(/assets/fonts/MaplestoryFont_OTF/Maplestory-OTF-Light.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: MapleStory OTF;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Maplestory OTF Bold"),
+    url(/assets/fonts/MaplestoryFont_OTF/Maplestory-OTF-Bold.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: Jalnan Gothic;
+  src: local("Jalnan Gothic"),
+    url(/assets/fonts/JalnanGothic/JalnanGothic.otf) format("opentype");
 }
 
 :root {
@@ -19,20 +87,53 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #fbfbfb;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --gray_200: #f6f7f9;
+  --gray_300: #e6e7ea;
+  --gray_400: #d9dde0;
+  --gray_500: #bfc5cb;
+  --gray_600: #98a1a6;
+  --gray_700: #757e85;
+  --gray_850: #4a4e53;
+  --gray_900: #121619;
+  --point_01: #00ab15;
+}
+
+.hide-scroll-bar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scroll-bar ::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   margin: 0;
+  background-color: #fafafa;
+  font-family: "Maplestory";
 }
 
-video { 
+video {
   object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+nav {
+  unicode-bidi: isolate;
 }
