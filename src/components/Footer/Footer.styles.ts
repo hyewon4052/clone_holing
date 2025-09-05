@@ -25,6 +25,14 @@ export const FooterContentBox = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  @media (max-width: 800px) {
+    height: 100%;
+    padding: 60px 18px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 36px;
+    width: 100%;
+  }
 `;
 
 export const FooterWrapper = styled.div`
@@ -37,9 +45,10 @@ export const FooterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
   @media (max-width: 800px) {
-    height: 549px;
-    padding: 60px 18px;
+    padding: 0px;
+    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     gap: 36px;
@@ -51,6 +60,9 @@ export const FooterLeft = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  @media (max-width: 800px) {
+    gap: 36px;
+  }
 `;
 
 export const FooterBlock = styled.div`
@@ -98,10 +110,10 @@ export const FooterCompanyInfo = styled.div`
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  > FooterInfoItem {
-    @media (max-width: 800px) {
-      flex-direction: column;
-    }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
   }
 `;
 
@@ -111,6 +123,10 @@ export const FooterInfoItem = styled.span`
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
+  @media (max-width: 800px) {
+    font-size: 12px;
+    font-weight: 500;
+  }
 `;
 
 export const FooterDivider = styled.div`
@@ -120,12 +136,26 @@ export const FooterDivider = styled.div`
   border-radius: 6px;
 `;
 
+export const FooterMobileDivider = styled.div`
+  width: 6px;
+  height: 6px;
+  background: rgb(146, 211, 235);
+  border-radius: 6px;
+  @media screen {
+    display: none;
+  }
+`;
+
 export const FooterLinkItem = styled.div`
   color: rgb(122, 175, 194);
-  font-family: "Suit-extrabold";
+  font-family: "SUIT";
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600px;
+  @media screen {
+    font-size: 12px;
+    font-weight: 500px;
+  }
 `;
 
 export const FooterRight = styled.div`
@@ -176,4 +206,21 @@ export const FooterSocialIcon = styled.img`
   cursor: pointer;
   user-select: none;
   transition: transform 0.2s ease-in-out;
+`;
+
+export const FooterMobileWrapper = styled.div`
+  display: none;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+  }
+`;
+
+export const MobileBr = styled.br`
+  display: none;
+  @media (max-width: 800px) {
+    display: inline-block;
+  }
 `;

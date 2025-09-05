@@ -49,7 +49,9 @@ function Footer() {
                   <S.FooterRow>
                     <img src="/assets/images/footer/location.svg" />
                     <S.FooterText>
-                      서울특별시 강남구 남부순환로351길 4, STAY 77, 3층
+                      서울특별시 강남구 남부순환로351길 4,
+                      <S.MobileBr />
+                      STAY 77, 3층
                     </S.FooterText>
                   </S.FooterRow>
                 </S.FooterBlock>
@@ -57,20 +59,24 @@ function Footer() {
               <S.FooterBlock>
                 <S.FooterCopyright>© 2025 Matholic Inc.</S.FooterCopyright>
                 <S.FooterCompanyInfo>
-                  <S.FooterInfoItem>(주)매쓰홀릭</S.FooterInfoItem>
-                  <S.FooterDivider />
-                  <S.FooterInfoItem>대표이사 강지훈, 김영희</S.FooterInfoItem>
-                  <S.FooterDivider />
+                  <S.FooterMobileWrapper>
+                    <S.FooterInfoItem>(주)매쓰홀릭</S.FooterInfoItem>
+                    <S.FooterDivider />
+                    <S.FooterInfoItem>대표이사 강지훈, 김영희</S.FooterInfoItem>
+                  </S.FooterMobileWrapper>
+                  <S.FooterMobileDivider />
                   <S.FooterInfoItem>
                     사업자등록번호 119-86-42991
                   </S.FooterInfoItem>
-                  <S.FooterDivider />
+                  <S.FooterMobileDivider />
                   <S.FooterInfoItem>
                     통신판매업신고 2025-서울강남-04724
                   </S.FooterInfoItem>
-                  <S.FooterDivider />
+                  <S.FooterMobileDivider />
                 </S.FooterCompanyInfo>
-                <S.FooterCompanyInfo>
+                <S.FooterCompanyInfo
+                  style={{ flexDirection: "row", alignItems: "center" }}
+                >
                   <a
                     href="https://parking.matholic.com/policy/service"
                     target="_blank"
