@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const IntroductionContainer = styled.div`
+export const IntroLayout = styled.div`
   overflow-x: hidden;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@ export const IntroductionContainer = styled.div`
   }
 `;
 
-export const ContentBox = styled.div`
+export const IntroTitleBox = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 800px) {
@@ -33,7 +33,7 @@ export const ContentBox = styled.div`
   }
 `;
 
-export const Subtitle = styled.span`
+export const SubTitleText = styled.span`
   font-family: "SUIT";
   font-size: 30px;
   font-weight: 700;
@@ -47,7 +47,7 @@ export const Subtitle = styled.span`
   }
 `;
 
-export const Title = styled.h1`
+export const TitleText = styled.h1`
   font-size: 90px;
   font-weight: 400;
   color: black;
@@ -63,7 +63,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Description = styled.span`
+export const DescriptionText = styled.span`
   font-family: "Suit-regular";
   font-size: 24px;
   color: rgb(117, 126, 133);
@@ -130,7 +130,7 @@ export const CTAMobileButton = styled.button`
   }
 `;
 
-export const MainImg = styled.div`
+export const MainImgBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +143,7 @@ export const MainImg = styled.div`
   }
 `;
 
-export const CloudBox = styled.div`
+export const CloudImgBox = styled.div`
   display: flex;
   flex-direction: row;
   gap: 8px;
