@@ -80,6 +80,9 @@ export const ParentsAuthor = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(117, 126, 133);
 `;
 
 export const ParentsName = styled.span`
