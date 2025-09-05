@@ -20,7 +20,7 @@ function Section2() {
   };
 
   return (
-    <S.GoalContainer>
+    <S.GoalLayout>
       <S.TextBox>
         <S.SubText>초등부터 중·고등까지</S.SubText>
         <S.MainText style={{ marginBottom: "80px" }}>
@@ -28,8 +28,8 @@ function Section2() {
           이면 한 학기 수학을 완성할 수 있어요
         </S.MainText>
       </S.TextBox>
-      <S.VideoBox>
-        <S.VideoWrapper>
+      <S.VideoBoxCol>
+        <S.VideoBox>
           <video
             ref={videoRef}
             key={currentIndex}
@@ -44,9 +44,9 @@ function Section2() {
           >
             <source src={videos[currentIndex]} type="video/mp4" />
           </video>
-        </S.VideoWrapper>
-      </S.VideoBox>
-    </S.GoalContainer>
+        </S.VideoBox>
+      </S.VideoBoxCol>
+    </S.GoalLayout>
   );
 }
 

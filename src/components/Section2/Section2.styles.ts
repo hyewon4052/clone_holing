@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const GoalContainer = styled.div`
+export const GoalLayout = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -28,10 +28,11 @@ export const TextBox = styled.div`
 export const SubText = styled.span`
   color: black;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 300px;
   font-family: "SUIT";
   @media (max-width: 800px) {
     font-size: 18px;
+    text-align: center;
   }
 `;
 
@@ -51,7 +52,7 @@ export const MainText = styled.span`
   }
 `;
 
-export const VideoBox = styled.div`
+export const VideoBoxCol = styled.div`
   flex-direction: column;
   gap: 54px;
   align-items: center;
@@ -62,7 +63,7 @@ export const VideoBox = styled.div`
   }
 `;
 
-export const VideoWrapper = styled.div`
+export const VideoBox = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10.5px;
