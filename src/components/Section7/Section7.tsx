@@ -32,15 +32,15 @@ function Section7() {
   };
 
   return (
-    <S.QnAContainer>
-      <S.Title>자주 묻는 질문</S.Title>
-      <S.QuestionCardList>
+    <S.QnALayout>
+      <S.QnATitle>자주 묻는 질문</S.QnATitle>
+      <S.QnAList>
         {qna.map((q, index) => {
           const isOpen = openIndex === index;
           return (
-            <S.QuestionCard key={index} onClick={() => toggleQuestion(index)}>
-              <S.QuestionCardHeader>
-                <S.QuestionLabel>
+            <S.QnAItemCol key={index} onClick={() => toggleQuestion(index)}>
+              <S.QnAHeaderRow>
+                <S.QnALabelRow>
                   <img
                     src={
                       isOpen
@@ -48,10 +48,10 @@ function Section7() {
                         : "/assets/images/root/qna/question_collapsed.svg"
                     }
                   />
-                  <S.QuestionTitle color={isOpen ? "#00ab15" : "black"}>
+                  <S.QnATitleText color={isOpen ? "#00ab15" : "black"}>
                     {q.question}
-                  </S.QuestionTitle>
-                </S.QuestionLabel>
+                  </S.QnATitleText>
+                </S.QnALabelRow>
                 <img
                   src={
                     isOpen
@@ -59,13 +59,13 @@ function Section7() {
                       : "/assets/images/root/qna/open.svg"
                   }
                 />
-              </S.QuestionCardHeader>
-              {isOpen && <S.QuestionAnswer>{q.answer}</S.QuestionAnswer>}
-            </S.QuestionCard>
+              </S.QnAHeaderRow>
+              {isOpen && <S.QnAAnswerBox>{q.answer}</S.QnAAnswerBox>}
+            </S.QnAItemCol>
           );
         })}
-      </S.QuestionCardList>
-    </S.QnAContainer>
+      </S.QnAList>
+    </S.QnALayout>
   );
 }
 

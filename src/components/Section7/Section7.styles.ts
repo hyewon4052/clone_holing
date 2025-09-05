@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const QnAContainer = styled.div`
+export const QnALayout = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const QnAContainer = styled.div`
   background: rgb(246, 247, 249);
 `;
 
-export const Title = styled.span`
+export const QnATitle = styled.span`
   color: black;
   font-size: 48px;
   font-weight: 300;
@@ -23,7 +23,7 @@ export const Title = styled.span`
   }
 `;
 
-export const QuestionCardList = styled.div`
+export const QnAList = styled.div`
   margin: 0px 40px;
   max-width: 1200px;
   display: flex;
@@ -35,7 +35,7 @@ export const QuestionCardList = styled.div`
   }
 `;
 
-export const QuestionCard = styled.div`
+export const QnAItemCol = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -49,7 +49,7 @@ export const QuestionCard = styled.div`
   }
 `;
 
-export const QuestionCardHeader = styled.div`
+export const QnAHeaderRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,7 +61,7 @@ export const QuestionCardHeader = styled.div`
   }
 `;
 
-export const QuestionLabel = styled.div`
+export const QnALabelRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -74,7 +74,7 @@ export const QuestionLabel = styled.div`
   }
 `;
 
-export const QuestionTitle = styled.span`
+export const QnATitleText = styled.span`
   font-size: 28px;
   font-weight: 300;
   color: ${(props) => props.color || "black"};
@@ -85,7 +85,7 @@ export const QuestionTitle = styled.span`
   }
 `;
 
-export const QuestionAnswer = styled.div`
+export const QnAAnswerBox = styled.div`
   border-radius: 18px;
   background: rgb(245, 249, 248);
   padding: 20px;
